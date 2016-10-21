@@ -1,0 +1,986 @@
+@font-face {
+    font-family: Univers Condensed Bold Bold;
+    src: url('../fonts/universe-condenced-bold.ttf');
+}
+/*
+  ========================================
+  general styles
+  ========================================
+*/
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Univers Condensed Bold Bold', sans-serif;
+  font-size: 16px;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+}
+.container {
+  width: 69.1666667%;
+  margin: 0 auto;
+}
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-family: 'Univers Condensed Bold Bold', sans-serif;
+}
+button {
+  cursor: pointer;
+  outline: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+a.btn-edt,
+button.btn-edt {
+  font-family: 'Univers Condensed Bold Bold', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+h1, h2, h3 {
+  font-weight: 700;
+}
+h1 {
+  font-size: 1.25em;
+}
+h2 {
+  font-size: 1.125em;
+}
+h3 {
+  font-size: 1em;
+}
+header, main, footer {
+  margin-bottom: 4em;
+}
+input {
+  outline: none;
+  font-family: 'Univers Condensed Bold Bold', sans-serif;
+  padding-left: 1em;
+}
+
+/*
+  ========================================
+  sprites section styles
+  ========================================
+*/
+
+.icon, .icon-c {
+  display: inline-block;
+  margin-right: 10px;
+  background: url('../images/spritesheet.png') no-repeat;
+  padding-top: 5px;
+}
+.phone .icon {
+  width: 15px;
+  height: 24px;
+  background-position: -39px -35px;
+}
+.time .icon {
+  width: 20px;
+  height: 20px;
+  background-position: -89px -5px;
+}
+.callback .icon {
+  width: 24px;
+  height: 24px;
+  background-position: -34px -96px;
+}
+.sgn-in .icon {
+  width: 19px;
+  height: 19px;
+  background-position: -5px -96px;
+}
+.discount .icon {
+  width: 21px;
+  height: 19px;
+  background-position: -31px -5px;
+}
+.prsnl-dt .icon {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -5px;
+}
+.hstr .icon {
+  width: 16px;
+  height: 22px;
+  background-position: -64px -35px;
+}
+.prs .icon {
+  width: 18px;
+  height: 18px;
+  background-position: -116px -68px;
+}
+.promo .icon {
+  width: 25px;
+  height: 22px;
+  background-position: -119px -36px;
+}
+.edit .icon {
+  width: 24px;
+  height: 24px;
+  background-position: -5px -35px;
+}
+.usr .icon {
+  width: 16px;
+  height: 16px;
+  background-position: -5px -5px;
+}
+.mrkr .icon {
+  width: 16px;
+  height: 25px;
+  background-position: -90px -59px;
+}
+.nmbr .icon {
+  width: 21px;
+  height: 21px;
+  background-position: -119px -5px;
+}
+.ltr .icon {
+  width: 19px;
+  height: 14px;
+  background-position: -90px -35px;
+}
+.schm .icon {
+  width: 12px;
+  height: 18px;
+  background-position: -64px -68px;
+}
+
+/*
+  ========================================
+  grid styles
+  ========================================
+*/
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.grid__item {
+  flex: 1;
+}
+
+/*
+  ========================================
+  header section styles
+  ========================================
+*/
+
+.secondary-group {
+  padding-bottom: 2em;
+  border-bottom: 2px solid rgb(196, 196, 196);
+}
+.secondary-group li {
+  padding: 0.5em 0;
+}
+.primary-group {
+  text-transform: uppercase;
+  padding-top: 1em;
+}
+.primary-group li {
+  padding: 0.5em 0;
+}
+.primary-group li a:hover {
+  text-decoration: none;
+}
+.primary-group li:hover {
+  background-color: rgb(97, 166, 37);
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+.primary-group li:hover a {
+  color: rgb(255, 255, 255);
+}
+.callback {
+  border: 2px solid rgb(97, 166, 37);
+  border-radius: 50px;
+  text-transform: uppercase;
+  color: rgb(97, 166, 37);
+}
+.callback:active {
+  background-color: rgb(97, 166, 37);
+}
+.secondary-group:hover, .primary-group {
+  cursor: pointer;
+}
+.callback a {
+  color: rgb(97, 166, 37);
+}
+span {
+  display: inline-block;
+}
+.callback:active a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.sign-in:hover span,
+.sign-up:hover span {
+  text-decoration: underline;
+  color: rgb(97, 166, 37);
+}
+.top-info,
+.sign-in,
+.sign-up {
+  font-weight: 700;
+}
+.discount {
+  margin-top: 1em !important;
+  background-color: rgb(239, 70, 71);
+  border-radius: 50px;
+}
+li.discount:hover {
+  background-color: rgb(239, 35, 23);
+}
+.discount a {
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.primary-group li .icon-c {
+  width: 17px;
+  height: 17px;
+  background-position: -62px -5px;
+}
+.primary-group .icon-c {
+  display: none;
+}
+.primary-group li:hover .icon-c {
+  display: inline-block;
+}
+
+/*
+  ========================================
+  search section styles
+  ========================================
+*/
+
+.search-section {
+  margin-bottom: 2em;
+}
+.search-section form {
+  margin-bottom: 1em;
+  padding: 1em 1.5em;
+  background-color: rgb(97, 166, 37);
+  border-radius: 2px;
+}
+.search-section input {
+  border: none;
+  padding: 0.5em 1em 0.5em;
+  margin-bottom: 1em;
+  border-radius: 2px;
+}
+.search-section input:active {
+  border: none;
+}
+.search-section input::-webkit-input-placeholder {
+  color: rgb(196, 196, 196);
+}
+.search-section button {
+  padding: 0.5em 0;
+  border: 1px solid rgb(57, 103, 17);
+  background-color: rgb(97, 166, 37);
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+}
+.search-section button:active {
+  background-color: rgb(43, 129, 37);
+  border-color: rgb(13, 242, 103);
+}
+
+/*
+  ========================================
+  breadcrumb section  styles
+  ========================================
+*/
+
+.breadcrumb-section {
+  margin-bottom: 2em;
+}
+.breadcrumb-section h1 {
+  padding: 0 0 1em 0;
+}
+.breadcrumb-item {
+  padding: 0.5em 0;
+}
+.breadcrumb-item:first-child {
+  padding-top: 0;
+}
+.breadcrumb-item a:hover {
+  color: rgb(97, 166, 37);
+  text-decoration: underline;
+}
+
+/*
+  ========================================
+  personal-area-info section  styles
+  ========================================
+*/
+
+.personal-area-nav {
+  font-weight: 700;
+}
+.personal-area-info-section {
+  margin-bottom: 2em;
+}
+.personal-area-nav {
+  padding-bottom: 1em;
+}
+.personal-area-nav li {
+  padding: 0.5em 0;
+}
+.personal-area-nav li:first-child {
+  padding-top: 0;
+}
+.personal-area-nav a:hover span {
+  color: rgb(97, 166, 37);
+  text-decoration: underline;
+}
+
+/*
+  ========================================
+  personal-edit section styles
+  ========================================
+*/
+
+.personal-edit {
+  margin-bottom: 2em;
+  border-bottom: 2px solid rgb(196, 196, 196);
+}
+.personal-edit label {
+  color: rgb(196, 196, 196);
+}
+.form-group {
+  padding: 0.5em 0;
+}
+.form-group:first-child {
+  padding-top: 0;
+}
+.form-group input {
+  border: none;
+  background-color: rgb(255, 255, 255);
+}
+::-webkit-input-placeholder {
+  color: rgb(0, 0, 0);
+}
+.btn-edt {
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: rgb(97, 166, 37);
+  font-size: 100%;
+  font-family: serif;
+}
+.btn-edt:hover {
+  color: rgb(0, 0, 0);
+}
+.btn-edt span {
+  text-decoration: underline;
+}
+
+/*
+  ========================================
+  personal-data section styles
+  ========================================
+*/
+
+.personal-data {
+  margin-bottom: 2em;
+}
+.personal-data h3 {
+  padding: 1em 0;
+}
+.personal-data dl {
+  padding-top: 1em;
+}
+.personal-data dt {
+  padding: 0.5em 0;
+  font-weight: 700;
+}
+.personal-data dt:first-child {
+  padding-top: 0;
+}
+
+/*
+  ========================================
+  personal-data section  styles
+  ========================================
+*/
+
+.patterns-conainer {
+  margin-bottom: 2em;
+}
+.personal-data-patterns h2 {
+  padding-bottom: 1em;
+  margin-top: 3em;
+}
+.my-pattern h3,
+.another-pattern h3 {
+  padding: 1em 0;
+  border-bottom: 2px solid rgb(220, 220, 220);
+}
+.my-pattern li,
+.another-pattern li {
+  padding: 0.5em 0;
+}
+.personal-data li:first-child {
+  padding-top: 0;
+}
+.btn-add-pattern {
+  padding: 0.5em 2em;
+  background-color: rgb(97, 166, 37);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+  border-radius: 50px;
+}
+.btn-add-pattern:hover {
+  background-color: rgb(43, 129, 37);
+  border-color: rgb(13, 242, 103);
+  text-decoration: none;
+}
+
+/*
+  ========================================
+  steps section  styles
+  ========================================
+*/
+
+.steps img {
+  display: block;
+  margin: 0 auto;
+}
+.social-media img {
+  cursor: pointer;
+}
+
+/*
+  ========================================
+  footer section  styles
+  ========================================
+*/
+
+footer {
+  background-color: rgb(24, 24, 24);
+  color: rgb(255, 255, 255);
+}
+footer {
+  padding-bottom: 2em;
+  margin-bottom: 0;
+}
+footer a {
+  color: rgb(255, 255, 255);
+}
+footer a:hover {
+  color: rgb(97, 166, 37);
+}
+.catalog h2 {
+  padding: 1em 0;
+}
+.catalog li {
+  padding: 0.5em 0;
+}
+.catalog li:last-child {
+  padding-bottom: 1em;
+}
+.catalog {
+  border-bottom: 2px solid rgb(65, 62, 64);
+}
+.license-and-contacts {
+  padding-top: 1em;
+}
+.license-and-contacts h2 {
+  color: rgb(97, 166, 37);
+}
+.license h2 {
+  padding: 1em 0;
+}
+.contacts h2 {
+  padding: 1em 0;
+}
+.mail h3,
+.phone h3 {
+  padding-bottom: 1em;
+}
+.phone h3 {
+  padding-top: 1em;
+}
+.schema-address {
+  margin-top: 1em;
+}
+a.btn-schema span {
+  color: rgb(97, 166, 37);
+  text-decoration: underline;
+}
+a.btn-schema:hover span {
+  color: rgb(0, 0, 0);
+}
+
+@media screen and (min-width: 600px) {
+
+  /*
+    ========================================
+    grid styles
+    ========================================
+*/
+
+  .grid__row--sm {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .grid__item {
+    flex: 1 0 50%;
+  }
+
+  /*
+    ========================================
+    header section styles
+    ========================================
+  */
+
+  .secondary-group li:first-child {
+    flex: 2 0 100%;
+  }
+  .primary-group ul {
+    justify-content: center;
+  }
+  .primary-group li:last-child {
+    flex: 0.2 0 auto;
+  }
+
+  /*
+    ========================================
+    search section styles
+    ========================================
+  */
+
+  .search-section form {
+    margin-bottom: 0;
+    align-items: baseline;
+  }
+  .search-section input,
+  .search-section button {
+    margin-top: 1em;
+  }
+  .search-section input {
+    flex: 1 0 auto;
+    padding: 1em;
+  }
+  .search-section button {
+    flex: 0.5 0 auto;
+    padding: 1em;
+    margin-left: 0.9em;
+  }
+
+  /*
+    ========================================
+    breadcrumb section styles
+    ========================================
+  */
+
+  .breadcrumb {
+    justify-content: center;
+  }
+  .breadcrumb li:nth-child(2) {
+    padding: 0.5em 0;
+    flex: 0.1 0 auto;
+  }
+  .breadcrumb-item:first-child {
+    padding-top: 0.5em;
+    text-align: right;
+  }
+  .breadcrumb-item:last-child {
+    padding-top: 0.5em;
+    text-align: left;
+  }
+  .breadcrumb-item {
+    flex: 1 0 auto;
+  }
+
+  /*
+    ========================================
+    personal-area-nav section styles
+    ========================================
+  */
+
+  .personal-edit {
+    margin-top: 4em;
+  }
+
+  /*
+    ========================================
+    footer section styles
+    ========================================
+  */
+
+  .columns {
+    -webkit-columns: 100px 2;
+    -moz-columns: 100px 2;
+          columns: 100px 2;
+  }
+  .catalog {
+    padding-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+
+  /*
+    ========================================
+    grid styles
+    ========================================
+*/
+
+  .grid__row--md {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .grid__item {
+    flex: 1 0 10%;
+  }
+
+  /*
+    ========================================
+    header section styles
+    ========================================
+  */
+
+  .secondary-group {
+    margin-top: 2em;
+  }
+  .primary-group li {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .primary-group li:last-child {
+    margin-left: 1em;
+    flex: 1 0 auto;
+    margin-top: 0 !important;
+  }
+  .primary-group li:nth-child(1) {
+    flex: 0.7 0 auto;
+  }
+  .primary-group li:nth-child(2) {
+    flex: 0.9 0 auto;
+  }
+  .primary-group li:nth-child(5) {
+    flex: 0.7 0 auto;
+  }
+  .primary-group li:nth-child(4) {
+    flex: 0.7 0 auto;
+  }
+  .icon-c {
+    margin-top: 0em;
+  }
+
+  /*
+    ========================================
+    search section styles
+    ========================================
+  */
+
+  .search-section form {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+  .search-section button {
+    flex: 0.2 0 auto;
+  }
+
+  /*
+    ========================================
+    personal-area-info  section styles
+    ========================================
+  */
+
+  .btn-edt {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .personal-area-nav {
+    margin-top: 5%;
+    flex: 1 0 30%;
+  }
+  .personal-detail-info {
+    flex: 1 0 70%;
+  }
+  .personal-area-nav ul {
+    flex-direction: column;
+    text-align: left;
+  }
+  .personal-area-nav li {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .personal-edit div:first-child {
+    padding-top: 0.5em;
+  }
+  .personal-data {
+    text-align: left;
+  }
+  .edit {
+    text-align: right;
+  }
+  .dots {
+    border-bottom: 1px dashed rgb(159, 159, 160);
+    flex: 1 0 200px;
+  }
+  .prsn-lst div:nth-child(1) dt {
+    flex: 0 0 auto;
+    padding-bottom: 0;
+  }
+  .prsn-lst div:nth-child(2) dt {
+    flex: 0 0 20%;
+    padding-bottom: 0;
+  }
+  .prsn-lst div:nth-child(3) dt {
+    flex: 0 0 21%;
+    padding-bottom: 0;
+  }
+  .prsn-lst div:nth-child(4) dt {
+    flex: 0 0 10%;
+    padding-bottom: 0;
+  }
+  .prsn-lst div:nth-child(5) dt {
+    flex: 0 0 19%;
+    padding-bottom: 0;
+  }
+  .prsn-lst div:nth-child(1) dd {
+    text-align: left;
+    flex: 1 0 auto;
+  }
+  .prsn-lst div:nth-child(2) dd {
+    text-align: left;
+    flex: 1 0 auto;
+  }
+  .prsn-lst div:nth-child(3) dd {
+    text-align: left;
+    flex: 1 0 auto;
+  }
+  .prsn-lst div:nth-child(4) dd {
+    text-align: left;
+    flex: 1 0 auto;
+  }
+  .prsn-lst div:nth-child(5) dd {
+    text-align: left;
+    flex: 1 0 auto;
+  }
+  .prsn-lst .grid__row--md {
+    padding-top: 2em;
+    padding-bottom: 2em;
+  }
+
+  /*
+    ========================================
+    personal-data-patterns section styles
+    ========================================
+  */
+
+  .btn {
+    display: inline-block;
+  }
+  .personal-data-patterns h2 {
+    text-align: left;
+  }
+  .patterns-conainer {
+    text-align: left;
+  }
+  .another-pattern {
+    margin-left: 4em;
+  }
+  .my-pattern .icon,
+  .another-pattern .icon {
+    float: left;
+  }
+  .my-pattern .btn-edt,
+  .another-pattern .btn-edt {
+    float: left;
+  }
+  .personal-data-patterns .btn-add-pattern {
+    float: left;
+  }
+
+  /*
+    ========================================
+    footer section styles
+    ========================================
+  */
+
+  .catalog {
+    padding-bottom: 2em;
+  }
+  .catalog h2 {
+    text-align: left;
+  }
+  .columns {
+    column-count: 4;
+    text-align: left;
+  }
+
+  /*
+    ========================================
+    license-and-contacts section styles
+    ========================================
+  */
+
+  .license p {
+    margin-left: 1em;
+  }
+  .contacts {
+    margin-left: 2em;
+  }
+  .license-and-contacts {
+    text-align: left;
+  }
+  .mail {
+    margin-left: 5em;
+  }
+  .phone h3 {
+    padding-top: 0;
+  }
+  .full-adrs {
+    margin-top: 2em;
+    margin-bottom: 1em;
+  }
+  .schema-address {
+    margin-top: 0;
+  }
+  .phone, .email,
+  .full-adrs,
+  .full-adrs-schem {
+    margin-left: 1em;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+
+  /*
+  ========================================
+  grid styles
+  ========================================
+*/
+
+  .grid__item {
+    flex: 1 0 15%;
+  }
+
+  /*
+    ========================================
+    header section styles
+    ========================================
+  */
+
+  .secondary-group {
+    margin-top: 2em;
+  }
+  .secondary-group li span {
+    margin-top: 5px;
+  }
+  .secondary-group li:first-child {
+    flex: 1 0 200px;
+  }
+  .secondary-group .callback  {
+    margin-top: -15px;
+    margin-bottom: 15px;
+  }
+  .secondary-group .callback span {
+    margin-top: 15px;
+  }
+
+  /*
+    ========================================
+    breadcrumb section styles
+    ========================================
+  */
+
+  .breadcrumb-section {
+    margin-top: 5em;
+  }
+
+  /*
+    ========================================
+    personal-area-info  section styles
+    ========================================
+  */
+
+  .btn-edt {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .personal-area-nav {
+    margin-top: 5%;
+    flex: 1 0 30%;
+  }
+  .personal-detail-info {
+    flex: 1 0 70%;
+  }
+  .personal-area-nav ul {
+    flex-direction: column;
+    text-align: left;
+  }
+  .personal-area-nav li {
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .personal-edit div:first-child {
+    padding-top: 0.5em;
+  }
+  .personal-data {
+    text-align: left;
+  }
+  .edit {
+    text-align: right;
+  }
+  .dots {
+    border-bottom: 1px dashed rgb(159, 159, 160);
+    flex: 1 0 430px;
+  }
+  .prsn-lst div:nth-child(1) dt {
+    flex: 0 0 auto;
+    padding-bottom: 0;
+  }
+  .prsn-lst div:nth-child(2) dt {
+    flex: 0 0 auto;
+    padding-bottom: 0;
+  }
+  .prsn-lst div:nth-child(3) dt {
+    flex: 0 0 17%;
+    padding-bottom: 0;
+  }
+  .prsn-lst div:nth-child(4) dt {
+    flex: 0 0 7%;
+    padding-bottom: 0;
+  }
+  .prsn-lst div:nth-child(5) dt {
+    flex: 0 0 15%;
+    padding-bottom: 0;
+  }
+  .prsn-lst div:nth-child(1) dd {
+    text-align: left;
+    flex: 1 0 auto;
+  }
+  .prsn-lst div:nth-child(2) dd {
+    text-align: left;
+    flex: 1 0 auto;
+  }
+  .prsn-lst div:nth-child(3) dd {
+    text-align: left;
+    flex: 1 0 auto;
+  }
+  .prsn-lst div:nth-child(4) dd {
+    text-align: left;
+    flex: 1 0 auto;
+  }
+  .prsn-lst div:nth-child(5) dd {
+    text-align: left;
+    flex: 1 0 auto;
+  }
+}

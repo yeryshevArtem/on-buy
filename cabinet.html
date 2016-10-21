@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+    <title>Cabinet</title>
+    <link href="styles/reset.css" rel="stylesheet">
+    <link href="styles/custom.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Roboto:300,300i,400,500,700&amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <ul class="grid__row grid__row--sm secondary-group grid__row--md">
+          <li class="grid__item"><a href="#"><img src="./images/logo.png" alt=""></a></li>
+          <li class="grid__item phone"><div class="icon"><span></span></div>8 (495) <span class="top-info">181-19-19</span></li>
+          <li class="grid__item time"><div class="icon"><span></span></div><span class="top-info">С 9:00 - 19:00</span> без выходных</li>
+          <li class="grid__item callback"><div class="icon"><span></span></div><a href="#"><span>Обратный звонок</span></a></li>
+          <li class="grid__item sgn-in"><div class="icon"><span></span></div><a href="#" class="sign-in"><span>Войти</span></a>/<a href=# class="sign-up"><span>Регистрация</span></a></li>
+        </ul>
+        <nav class="primary-group">
+          <ul class="grid__row grid__row--sm grid__row--md">
+            <li class="grid__item ctlg"><div class="icon-c"></div><a href="#">Каталог</a></li>
+            <li class="grid__item dscs"><div class="icon-c"></div><a href="#">Акции</a></li>
+            <li class="grid__item pay"><div class="icon-c"></div><a href="#">Доставка и оплата</a></li>
+            <li class="grid__item about-srvc"><div class="icon-c"></div><a href="#">О сервисе</a></li>
+            <li class="grid__item faq"><div class="icon-c"></div><a href="#">Faq</a></li>
+            <li class="grid__item prgm"><div class="icon-c"></div><a href="#">Программа лояльности</a></li>
+            <li class="grid__item discount"><div class="icon"><span></span></div><a href="#" class="discount-value"><span>-20</span></a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main role="main" class="content">
+      <div class="container">
+        <section class="search-section">
+          <form method="POST" action="" class="grid__row grid__row--sm">
+            <input type="text" class="grid__item" placeholder="Поиск по 25 000 товаров">
+            <button type="submit" class="grid__item">Поиск</button>
+          </form>
+        </section>
+        <section class="breadcrumb-section">
+          <h1>Личный кабинет</h1>
+          <p>
+            <ul class="breadcrumb grid__row--sm">
+              <li class="breadcrumb-item grid__item"><a href=#>Главная</a></li>
+              <li class="grid__item">&#8226;</li>
+              <li class="breadcrumb-item grid__item"><a href=#>Личный кабинет</a></li>
+            </ul>
+          </p>
+        </section>
+        <section class="personal-area-info-section grid__row--md">
+          <nav class="personal-area-nav grid__item">
+            <ul class="grid__row grid__row--sm">
+              <li class="grid__item prsnl-dt"><div class="icon"><span></span></div><a href=#><span>Персональные данные</span></a></li>
+              <li class="grid__item hstr"><div class="icon"><span></span></div><a href=#><span>История заказов</span></a></li>
+              <li class="grid__item prs"><div class="icon"><span></span></div><a href=#><span>Кошелек</span></a></li>
+              <li class="grid__item promo"><div class="icon"><span></span></div><a href=#><span>Промо коды</span></a></li>
+            </ul>
+          </nav>
+          <section class="personal-detail-info grid__item">
+            <form method="POST" action="" class="personal-edit grid__row grid__row--sm grid__row--md">
+              <div class="form-group grid__item">
+                <label for="login">Логин:</label>
+                <input type="text" id="login" placeholder="Юзернейм">
+              </div>
+              <div class="form-group grid__item">
+                <label for="password">Пароль:</label>
+                <input type="password" id="password" placeholder="******">
+              </div>
+              <div class="grid__item form-group edit">
+                <div class="icon"><span></span></div>
+                <button type="submit" class="btn btn-edt"><span>Изменить пароль</span></button>
+              </div>
+            </form>
+            <section class="personal-data">
+              <div class="grid__row grid__row--md">
+                <div class="grid__item"><h3>Персональные данные</h3></div>
+                <div class="grid__item edit"><div class="icon"><span></span></div><a href="#" class="btn btn-edt"><span>Изменить пароль</span></a></div>
+              </div>
+              <dl class="prsn-lst">
+                <div class="grid__row--md">
+                  <dt class="grid__item">Ф.И.О.:</dt>
+                  <div class="dots grid__item"></div>
+                  <dd class="grid__item">Иванов Иван Петрович</dd>
+                </div>
+                <div class="grid__row--md">
+                  <dt class="grid__item">Адрес доставки:</dt>
+                  <div class="grid__item dots"></div>
+                  <dd class="grid__item">ул. Севастопольская 17, дом 3, кв. 5</dd>
+                </div>
+                <div class="grid__row--md">
+                  <dt class="grid__item">Номер телефона:</dt>
+                  <div class="dots grid__item"></div>
+                  <dd class="grid__item">+7 (123) 345 65 56</dd>
+                </div>
+                <div class="grid__row--md">
+                  <dt class="grid__item">E-mail:</dt>
+                  <div class="dots grid__item"></div>
+                  <dd class="grid__item">username@mail.ru</dd>
+                </div>
+                <div class="grid__row--md">
+                  <dt class="grid__item">Дата рождения:</dt>
+                  <div class="dots grid__item"></div>
+                  <dd class="grid__item">19/32/1985</dd>
+                </div>
+              </dl>
+            </section>
+            <section class="personal-data-patterns">
+              <h2>Шаблоны адресов:</h2>
+              <div class="grid__row patterns-conainer grid__row--sm grid__row-md">
+                <div class="grid__item my-pattern">
+                  <h3>Мой шаблон</h3>
+                  <p>
+                    <ul>
+                      <li class="usr"><div class="icon"><span></span></div><span>Иванов Иван Петрович</span></li>
+                      <li class="mrkr"><div class="icon"><span></span></div><span>ул. Севастопольская 17, дом 3, кв. 5</span></li>
+                      <li class="nmbr"><div class="icon"><span></span></div><span>+7 (123) 345 65 56</span></li>
+                      <li class="ltr"><div class="icon"><span></span></div><span>username@mail.ru</span></li>
+                      <li class="edit"><div class="icon"><span></span></div><a href="#" class="btn btn-edt"><span>Изменить шаблон</span></a></li>
+                    </ul>
+                  </p>
+                </div>
+                <div class="grid__item another-pattern">
+                  <h3>Другой шаблон</h3>
+                  <p>
+                    <ul>
+                      <li class="usr"><div class="icon"><span></span></div><span>Иванов Иван Петрович</span></li>
+                      <li class="mrkr"><div class="icon"><span></span></div><span>ул. Севастопольская 17, дом 3, кв. 5</span></li>
+                      <li class="nmbr"><div class="icon"><span></span></div><span>+7 (123) 345 65 56</span></li>
+                      <li class="ltr"><div class="icon"><span></span></div><span>username@mail.ru</span></li>
+                      <li class="edit"><div class="icon"><span></span></div><a href="#" class="btn btn-edt"><span>Изменить шаблон</span></a></li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+              <a href="#" class="btn btn-add-pattern">Добавить шаблон</a>
+            </section> <!-- personal-data-patterns -->
+          </section> <!-- personal-detail-info -->
+        </section> <!-- personal-area-info-section -->
+      </div> <!-- container -->
+    </main>
+    <footer>
+      <div class="container">
+        <section class="catalog">
+          <h2>Каталог</h2>
+          <p>
+            <ul class="columns">
+              <li><a href="#">Мясо</a></li>
+              <li><a href="#">Овощи и грибы</a></li>
+              <li><a href="#">Молочные продукты</a></li>
+              <li><a href="#">Рыба и морепродукты</a></li>
+              <li><a href="#">Фрукты и ягоды</a></li>
+              <li><a href="#">Сыр, масло, яйца</a></li>
+              <li><a href="#">Хлебобулочные изделия</a></li>
+              <li><a href="#">Полуфабрикаты</a></li>
+              <li><a href="#">Кондитерские изделия</a></li>
+              <li><a href="#">Бакалея</a></li>
+              <li><a href="#">Соусы и приправы</a></li>
+              <li><a href="#">Чай</a></li>
+              <li><a href="#">Кофе</a></li>
+              <li><a href="#">Детское питание</a></li>
+              <li><a href="#">Диетическое питание</a></li>
+              <li><a href="#">Вода, соки, напитки</a></li>
+              <li><a href="#">Товары для офиса</a></li>
+              <li><a href="#">Бытовая химия</a></li>
+              <li><a href="#">Посуда</a></li>
+              <li><a href="#">Товары для дома</a></li>
+              <li><a href="#">Текстиль</a></li>
+              <li><a href="#">Сад и дача</a></li>
+              <li><a href="#">Зоотовары</a></li>
+            </ul>
+          </p>
+        </section> <!-- catalog -->
+        <section class="license-and-contacts grid__row--md">
+          <section class="license grid__item">
+            <h2>&#169; 2016 OOO &#171;OnBuy&#187;</h2>
+            <p>Интернет-магазин: прием заказа по телефону (с 9:00 до 21:00), вопросы организации доставки круглосуточно.</p>
+          </section>
+          <section class="contacts grid__item">
+            <h2>Контакты</h2>
+            <div class="grid__row grid__row--md">
+              <div class="grid__row phone">
+                <h3><address>8(495)181-19-19</address></h3>
+                <p>c 9:00 до 19:00 без выходных</p>
+              </div>
+              <div class="grid__row mail">
+                <h3><address><a href="mailto:onbuy@support.ru">onbuy@support.ru</a></address></h3>
+                <p>Оформление заказов</p>
+              </div>
+            </div>
+            <div class="full-adrs">123456, г.Москва, ул.Симферопольская, д.11, кв. 56</div>
+            <div class="grid__row grid__row--md full-adrs-schem">
+              <div class="grid__item"><address>м. Белорусская</address></div>
+              <div class="grid__item schema-address"><address class="schm"><div class="icon"><span></span></div><a href="#" class="btn btn-schema"><span>Схема проезда</span></a></address></div>
+            </div>
+          </section>
+        </section> <!-- license-and-cont -->
+      </div>
+    </footer>
+  </body>
+</html>
