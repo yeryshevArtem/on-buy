@@ -2,11 +2,13 @@
     font-family: Univers Condensed Bold Bold;
     src: url('../fonts/universe-condenced-bold.ttf');
 }
+
 /*
   ========================================
-  general styles
+    general styles
   ========================================
 */
+
 *,
 *:before,
 *:after {
@@ -48,7 +50,7 @@ h1, h2, h3 {
   font-weight: 700;
 }
 h1 {
-  font-size: 1.25em;
+  font-size: 1.5em;
 }
 h2 {
   font-size: 1.125em;
@@ -67,7 +69,7 @@ input {
 
 /*
   ========================================
-  sprites section styles
+    sprites section styles
   ========================================
 */
 
@@ -155,7 +157,7 @@ input {
 
 /*
   ========================================
-  grid styles
+    grid styles
   ========================================
 */
 
@@ -170,7 +172,7 @@ input {
 
 /*
   ========================================
-  header section styles
+    header section styles
   ========================================
 */
 
@@ -243,21 +245,51 @@ li.discount:hover {
   font-weight: 700;
   color: rgb(255, 255, 255);
 }
+.primary-group li {
+  position: relative;
+}
 .primary-group li .icon-c {
   width: 17px;
   height: 17px;
   background-position: -62px -5px;
 }
 .primary-group .icon-c {
+  position: absolute;
   display: none;
+}
+.primary-group li:last-child a span {
+  vertical-align: top;
+}
+.primary-group li:last-child .icon{
+  position: absolute;
+  left: 80px;
+  top: 5px;
 }
 .primary-group li:hover .icon-c {
   display: inline-block;
 }
+.primary-group li:nth-child(1) .icon-c {
+  left: 10px;
+}
+.primary-group li:nth-child(2) .icon-c {
+  left: 10px;
+}
+.primary-group li:nth-child(3) .icon-c {
+  left: 10px;
+}
+.primary-group li:nth-child(4) .icon-c {
+  left: 10px;
+}
+.primary-group li:nth-child(5) .icon-c {
+  left: 10px;
+}
+.primary-group li:nth-child(6) .icon-c {
+  left: 10px;
+}
 
 /*
   ========================================
-  search section styles
+    search section styles
   ========================================
 */
 
@@ -298,7 +330,7 @@ li.discount:hover {
 
 /*
   ========================================
-  breadcrumb section  styles
+    breadcrumb section  styles
   ========================================
 */
 
@@ -321,7 +353,7 @@ li.discount:hover {
 
 /*
   ========================================
-  personal-area-info section  styles
+    personal-area-info section  styles
   ========================================
 */
 
@@ -347,7 +379,7 @@ li.discount:hover {
 
 /*
   ========================================
-  personal-edit section styles
+    personal-edit section styles
   ========================================
 */
 
@@ -387,7 +419,7 @@ li.discount:hover {
 
 /*
   ========================================
-  personal-data section styles
+    personal-data section styles
   ========================================
 */
 
@@ -410,7 +442,7 @@ li.discount:hover {
 
 /*
   ========================================
-  personal-data section  styles
+    personal-data section  styles
   ========================================
 */
 
@@ -448,7 +480,31 @@ li.discount:hover {
 
 /*
   ========================================
-  steps section  styles
+    ingredients section styles
+  ========================================
+*/
+
+.ingredients h2 {
+  margin-bottom: 1em;
+}
+.ingredients p:first-of-type {
+  padding-bottom: 1em;
+  color: rgb(135, 135, 136);
+}
+.ingredients-item {
+  padding-bottom: 1em;
+}
+.ingredients-item:before {
+  content: "-";
+}
+.ingredients-item a {
+  color: rgb(97, 166, 37);
+  text-decoration: underline;
+}
+
+/*
+  ========================================
+    steps section  styles
   ========================================
 */
 
@@ -459,10 +515,49 @@ li.discount:hover {
 .social-media img {
   cursor: pointer;
 }
+.social-media {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+.steps h2 {
+  margin-bottom: 0.5em;
+}
+.steps img {
+  margin-bottom: 0.5em;
+}
+.steps-item {
+  margin-bottom: 1em;
+}
 
 /*
   ========================================
-  footer section  styles
+    recept-production section  styles
+  ========================================
+*/
+
+aside {
+  text-align: center;
+}
+aside h1 {
+  margin: 2em auto;
+}
+#slides h2 {
+  margin: 0 auto;
+  line-height: 1.2em;
+}
+#slides p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+#slides img {
+  height: 200px;
+  margin: 0 auto;
+}
+
+/*
+  ========================================
+    footer section  styles
   ========================================
 */
 
@@ -522,11 +617,17 @@ a.btn-schema:hover span {
   color: rgb(0, 0, 0);
 }
 
+@media screen and (min-width: 319px) {
+  .primary-group li:nth-child(6) .icon-c {
+    left: 5px;
+  }
+}
+
 @media screen and (min-width: 600px) {
 
   /*
     ========================================
-    grid styles
+      grid styles
     ========================================
 */
 
@@ -541,7 +642,7 @@ a.btn-schema:hover span {
 
   /*
     ========================================
-    header section styles
+      header section styles
     ========================================
   */
 
@@ -554,10 +655,17 @@ a.btn-schema:hover span {
   .primary-group li:last-child {
     flex: 0.2 0 auto;
   }
+  .primary-group li:nth-child(6) .icon-c {
+    left: 10px;
+  }
+  .primary-group li:nth-child(7) .icon {
+    left: 20px;
+    top: 6px;
+  }
 
   /*
     ========================================
-    search section styles
+      search section styles
     ========================================
   */
 
@@ -581,16 +689,20 @@ a.btn-schema:hover span {
 
   /*
     ========================================
-    breadcrumb section styles
+      breadcrumb section styles
     ========================================
   */
 
   .breadcrumb {
     justify-content: center;
   }
-  .breadcrumb li:nth-child(2) {
-    padding: 0.5em 0;
-    flex: 0.1 0 auto;
+  .breadcrumb-item {
+    flex: 0 0 auto;
+  }
+  .breadcrumb li:nth-child(2),
+  .breadcrumb li:nth-child(4) {
+    padding: 0.5em 0.4em;
+    flex: 0 0 auto;
   }
   .breadcrumb-item:first-child {
     padding-top: 0.5em;
@@ -600,13 +712,27 @@ a.btn-schema:hover span {
     padding-top: 0.5em;
     text-align: left;
   }
-  .breadcrumb-item {
-    flex: 1 0 auto;
+
+  /*
+    ========================================
+      steps section  styles
+    ========================================
+  */
+
+  .steps h2 {
+    margin-bottom: 0.5em;
+  }
+  .steps img {
+    margin-bottom: 0.5em;
+  }
+  .steps-item {
+    margin-bottom: 1em;
+    flex: 1 0 50%;
   }
 
   /*
     ========================================
-    personal-area-nav section styles
+      personal-area-nav section styles
     ========================================
   */
 
@@ -616,7 +742,7 @@ a.btn-schema:hover span {
 
   /*
     ========================================
-    footer section styles
+      footer section styles
     ========================================
   */
 
@@ -634,7 +760,7 @@ a.btn-schema:hover span {
 
   /*
     ========================================
-    grid styles
+      grid styles
     ========================================
 */
 
@@ -649,7 +775,7 @@ a.btn-schema:hover span {
 
   /*
     ========================================
-    header section styles
+      header section styles
     ========================================
   */
 
@@ -658,7 +784,7 @@ a.btn-schema:hover span {
   }
   .primary-group li {
     padding-top: 1em;
-    padding-bottom: 1em;
+    padding-bottom: 0.9em;
   }
   .primary-group li:last-child {
     margin-left: 1em;
@@ -680,10 +806,25 @@ a.btn-schema:hover span {
   .icon-c {
     margin-top: 0em;
   }
+  .primary-group li:nth-child(1) .icon-c,
+  .primary-group li:nth-child(2) .icon-c,
+  .primary-group li:nth-child(3) .icon-c,
+  .primary-group li:nth-child(4) .icon-c,
+  .primary-group li:nth-child(5) .icon-c,
+  .primary-group li:nth-child(6) .icon-c,
+  .primary-group li:nth-child(7) .icon  {
+    top: 14px;
+  }
+  .primary-group li:nth-child(6) .icon-c {
+    left: 5px;
+  }
+  .primary-group li:nth-child(6) a {
+    padding-left: 25px;
+  }
 
   /*
     ========================================
-    search section styles
+      search section styles
     ========================================
   */
 
@@ -697,7 +838,121 @@ a.btn-schema:hover span {
 
   /*
     ========================================
-    personal-area-info  section styles
+      breadcrumb section styles
+    ========================================
+  */
+
+  .breadcrumb {
+    justify-content: center;
+  }
+  .breadcrumb-item {
+    flex: 0 0 auto;
+  }
+  .breadcrumb li:nth-child(2),
+  .breadcrumb li:nth-child(4) {
+    padding: 0.5em 0.4em;
+    flex: 0 0 auto;
+  }
+  .breadcrumb-item:first-child {
+    padding-top: 0.5em;
+    text-align: right;
+  }
+  .breadcrumb-item:last-child {
+    padding-top: 0.5em;
+    text-align: left;
+  }
+
+  /*
+    ========================================
+      recept-detail-info section styles
+    ========================================
+  */
+
+  .recept-detail-info {
+    margin-top: 5em;
+  }
+
+  /*
+    ========================================
+      recept-production section styles
+    ========================================
+  */
+
+  aside {
+    position: relative;
+  }
+
+  /*
+    ========================================
+      ingredients section styles
+    ========================================
+  */
+
+  .ingredients,
+  .ingredients a {
+    text-align: left;
+  }
+  .ingredients {
+    flex: 0.5 0 100px;
+  }
+  .steps img {
+    margin-left: 0;
+  }
+
+  /*
+    ========================================
+      steps section styles
+    ========================================
+  */
+
+  .steps {
+    text-align: left;
+  }
+  .steps-row {
+    flex-direction: column;
+  }
+  .steps-row p {
+    line-height: 1.5em;
+  }
+
+  /*
+    ========================================
+      social-media section styles
+    ========================================
+  */
+
+  .social-media img {
+    margin-left: 0;
+  }
+
+  /*
+    ========================================
+      recept-production section styles
+    ========================================
+  */
+
+  .slide-button {
+    cursor: pointer;
+    position: absolute;
+  }
+  .prev{
+    background: url('../images/arrows-sprite.png') no-repeat -5px -5px;
+    width: 20px;
+    height: 35px;
+    top: 200px;
+    left: -50px;
+  }
+  .next {
+    background: url('../images/arrows-sprite.png') no-repeat -35px -5px;
+    width: 20px;
+    height: 35px;
+    top: 200px;
+    left: 1050px;
+  }
+
+  /*
+    ========================================
+      personal-area-info  section styles
     ========================================
   */
 
@@ -726,6 +981,9 @@ a.btn-schema:hover span {
   .personal-data {
     text-align: left;
   }
+  .personal-data dd {
+    text-align: right !important;
+  }
   .edit {
     text-align: right;
   }
@@ -738,40 +996,40 @@ a.btn-schema:hover span {
     padding-bottom: 0;
   }
   .prsn-lst div:nth-child(2) dt {
-    flex: 0 0 20%;
+    flex: 0 0 auto;
     padding-bottom: 0;
   }
   .prsn-lst div:nth-child(3) dt {
-    flex: 0 0 21%;
+    flex: 0 0 auto;
     padding-bottom: 0;
   }
   .prsn-lst div:nth-child(4) dt {
-    flex: 0 0 10%;
+    flex: 0 0 auto;
     padding-bottom: 0;
   }
   .prsn-lst div:nth-child(5) dt {
-    flex: 0 0 19%;
+    flex: 0 0 auto;
     padding-bottom: 0;
   }
   .prsn-lst div:nth-child(1) dd {
     text-align: left;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
   }
   .prsn-lst div:nth-child(2) dd {
     text-align: left;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
   }
   .prsn-lst div:nth-child(3) dd {
     text-align: left;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
   }
   .prsn-lst div:nth-child(4) dd {
     text-align: left;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
   }
   .prsn-lst div:nth-child(5) dd {
     text-align: left;
-    flex: 1 0 auto;
+    flex: 0 0 auto;
   }
   .prsn-lst .grid__row--md {
     padding-top: 2em;
@@ -780,7 +1038,7 @@ a.btn-schema:hover span {
 
   /*
     ========================================
-    personal-data-patterns section styles
+      personal-data-patterns section styles
     ========================================
   */
 
@@ -810,7 +1068,7 @@ a.btn-schema:hover span {
 
   /*
     ========================================
-    footer section styles
+      footer section styles
     ========================================
   */
 
@@ -827,7 +1085,7 @@ a.btn-schema:hover span {
 
   /*
     ========================================
-    license-and-contacts section styles
+      license-and-contacts section styles
     ========================================
   */
 
@@ -860,11 +1118,36 @@ a.btn-schema:hover span {
   }
 }
 
+@media screen and (min-width: 1600px) {
+
+  /*
+    ========================================
+      header section styles
+    ========================================
+  */
+  .primary-group li:nth-child(6) .icon-c {
+    left: 10px;
+  }
+
+  /*
+    ========================================
+      recept-production section styles
+    ========================================
+  */
+
+  .prev{
+    left: -40px;
+  }
+  .next {
+    left: 1200px;
+  }
+}
+
 @media screen and (min-width: 1800px) {
 
   /*
   ========================================
-  grid styles
+    grid styles
   ========================================
 */
 
@@ -874,7 +1157,7 @@ a.btn-schema:hover span {
 
   /*
     ========================================
-    header section styles
+      header section styles
     ========================================
   */
 
@@ -897,19 +1180,69 @@ a.btn-schema:hover span {
 
   /*
     ========================================
-    breadcrumb section styles
+      breadcrumb section styles
     ========================================
   */
 
   .breadcrumb-section {
     margin-top: 5em;
   }
+  .breadcrumb {
+    justify-content: center;
+  }
+  .breadcrumb-item {
+    flex: 0 0 auto;
+  }
+  .breadcrumb li:nth-child(2),
+  .breadcrumb li:nth-child(4) {
+    padding: 0.5em 0.4em;
+    flex: 0 0 auto;
+  }
+  .breadcrumb-item:first-child {
+    padding-top: 0.5em;
+    text-align: right;
+  }
+  .breadcrumb-item:last-child {
+    padding-top: 0.5em;
+    text-align: left;
+  }
 
   /*
     ========================================
-    personal-area-info  section styles
+      ingredients section styles
     ========================================
   */
+
+  .ingredients,
+  .ingredients a {
+    text-align: left;
+  }
+  .ingredients {
+    flex: 0.5 0 200px;
+  }
+  .steps img {
+    margin-left: 0;
+  }
+
+  /*
+    ========================================
+      recept-production section styles
+    ========================================
+  */
+
+  .prev{
+    left: -40px;
+  }
+  .next {
+    left: 1300px;
+  }
+
+  /*
+    ========================================
+      personal-area-info  section styles
+    ========================================
+  */
+
 
   .btn-edt {
     padding-left: 0;
@@ -943,44 +1276,93 @@ a.btn-schema:hover span {
     border-bottom: 1px dashed rgb(159, 159, 160);
     flex: 1 0 430px;
   }
-  .prsn-lst div:nth-child(1) dt {
-    flex: 0 0 auto;
-    padding-bottom: 0;
+}
+
+@media screen and (min-width: 2000px) {
+
+  /*
+    ========================================
+      recept-production section styles
+    ========================================
+  */
+
+  .prev{
+    left: -40px;
   }
-  .prsn-lst div:nth-child(2) dt {
-    flex: 0 0 auto;
-    padding-bottom: 0;
+  .next {
+    left: 1450px;
   }
-  .prsn-lst div:nth-child(3) dt {
-    flex: 0 0 17%;
-    padding-bottom: 0;
+}
+
+@media screen and (min-width: 2400px) {
+
+  /*
+    ========================================
+      recept-production section styles
+    ========================================
+  */
+
+  .next {
+    left: 1725px;
   }
-  .prsn-lst div:nth-child(4) dt {
-    flex: 0 0 7%;
-    padding-bottom: 0;
+}
+
+@media screen and (min-width: 2700px) {
+
+  /*
+    ========================================
+      recept-production section styles
+    ========================================
+  */
+
+  .next {
+    left: 1950px;
   }
-  .prsn-lst div:nth-child(5) dt {
-    flex: 0 0 15%;
-    padding-bottom: 0;
+}
+
+@media screen and (min-width: 3700px) {
+
+  /*
+    ========================================
+      recept-production section styles
+    ========================================
+  */
+
+  .prev{
+    left: -100px;
   }
-  .prsn-lst div:nth-child(1) dd {
-    text-align: left;
-    flex: 1 0 auto;
+  .next {
+    left: 2650px;
   }
-  .prsn-lst div:nth-child(2) dd {
-    text-align: left;
-    flex: 1 0 auto;
+}
+
+@media screen and (min-width: 5500px) {
+
+  /*
+    ========================================
+      recept-production section styles
+    ========================================
+  */
+
+  .prev{
+    left: 200px;
   }
-  .prsn-lst div:nth-child(3) dd {
-    text-align: left;
-    flex: 1 0 auto;
+  .next {
+    left: 3600px;
   }
-  .prsn-lst div:nth-child(4) dd {
-    text-align: left;
-    flex: 1 0 auto;
+}
+@media screen and (min-width: 7000px) {
+
+  /*
+    ========================================
+      recept-production section styles
+    ========================================
+  */
+
+  .prev{
+    left: -300px;
   }
-  .prsn-lst div:nth-child(5) dd {
-    text-align: left;
-    flex: 1 0 auto;
+  .next {
+    left: 5500px;
   }
 }

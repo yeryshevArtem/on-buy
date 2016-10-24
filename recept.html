@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-    <title>Cabinet</title>
+    <title>Recept</title>
     <link href="styles/reset.css" rel="stylesheet">
     <link href="styles/custom.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arimo:400,400i,700,700i|Roboto:300,300i,400,500,700&amp;subset=cyrillic-ext,latin-ext" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles/slick.css">
+    <link rel="stylesheet" type="text/css" href="styles/slick-theme.css"/>
   </head>
   <body>
     <header>
@@ -51,44 +52,44 @@
             </ul>
           </p>
         </section>
-        <section class="recept-detail-info">
-          <section class="ingredients">
-            <h2>Ингредиенты</h2>
+        <section class="recept-detail-info grid__row--md">
+          <section class="ingredients grid__item">
+            <h2>Ингредиенты:</h2>
             <p>2 порции</p>
             <p>
-              <ul>
-              <li>200 г. спагетти или <a href="#">лингвини</a></li>
-              <li>100 г. помидоров черри</li>
-              <li>3 зубчика чеснока</li>
-              <li>3 ст. л. оливкового масла</li>
-              <li>2 ст. л. кедровых орешков</li>
-              <li>при желании - 2 ст. л. <a href=#>тертого пармезана<a></li>
-              <li>несколько <a href=#>веточек базилика</a></li>
-              <li>соль</li>
-              <li>черный перец</li>
+              <ul class="ingredients-row">
+                <li class="ingredients-item">200 г. спагетти или <a href="#">лингвини</a></li>
+                <li class="ingredients-item">100 г. помидоров черри</li>
+                <li class="ingredients-item">3 зубчика чеснока</li>
+                <li class="ingredients-item">3 ст. л. оливкового масла</li>
+                <li class="ingredients-item">2 ст. л. кедровых орешков</li>
+                <li class="ingredients-item">при желании - 2 ст. л. <a href=#>тертого пармезана<a></li>
+                <li class="ingredients-item">несколько <a href=#>веточек базилика</a></li>
+                <li class="ingredients-item">соль</li>
+                <li class="ingredients-item">черный перец</li>
             </ul>
           </p>
           </section>
-          <section class="steps">
+          <section class="steps grid__item">
             <h2>Очень простая паста черри с базаликом</h2>
             <img src="images/pasta-cherry.png" alt="">
-            <ul>
-              <li>
+            <ul class="steps-row grid__row--sm grid__row--md">
+              <li class="steps-item grid__item">
                 <h2>Шаг 1</h2>
                 <p>Листинки базилика вымойте, лбсушите бумажным полотенцем, отложите несколько самых симпатичных для украшения, а остальные
                   сложите стопкой, скрутите ее, как будто делаете сигарету и тонко нашинкуйте.</p>
               </li>
-              <li>
+              <li class="steps-item grid__item">
                 <h2>Шаг 2</h2>
                 <p>Нарежте черри на 2 или 4 части, в зависимости от размера, добавьте базалик или мелко нарезанный чеснок, приправте солью, свежемолотым
                   перцеми, при желании, сушеным чили, залейте хорошим оливковым маслом и как следует перемешайте.</p>
               </li>
-              <li>
+              <li class="steps-item grid__item">
                 <h2>Шаг 3</h2>
                 <p>Отварите спагетти или лингвини в подсоленой воде согласно интрукции на упакове, слейте воду и соедините с помидорами. Хорошенько
                   размешайте и выложите на тарелки, после чего украсьте листиками базилика о обжаренными на сухой сковороде кедровыми орешками.</p>
               </li>
-              <li>
+              <li class="steps-item grid__item">
                 <h2>Шаг 4</h2>
                 <p>При желании посыпте пасту тертым пармезаном и подавайте к столу без промедления.</p>
               </li>
@@ -100,26 +101,58 @@
         </section>
         <aside>
           <h1>В рецепте присутствуют:</h1>
-          <section>
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </section>
-          <section>
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </section>
-          <section>
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </section>
-          <section>
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-          </section>
+          <div id="slides">
+            <div>
+              <img src="images/grapes.png" alt="">
+              <h2>Виноград красный б/к</h2>
+              <p>Собственное производство</p>
+              <p>269 р.</p>
+            </div>
+            <div>
+              <img src="images/pears.png" alt="">
+              <h2>Груши Фламинго</h2>
+              <p>Диетический продукт</p>
+              <p>90 р.</p>
+            </div>
+            <div>
+              <img src="images/milk.png" alt="">
+              <h2>Сливки пастеризованные Углече Поле 10%</h2>
+              <p>Колбасный цех</p>
+              <p>196 р.</p>
+            </div>
+            <div>
+              <img src="images/fish.png" alt="">
+              <h2>Анчоусы Mancin в подсолченчном масле филе</h2>
+              <p>Собственное производство</p>
+              <p>340 р.</p>
+            </div>
+            <div>
+              <img src="images/grapes.png" alt="">
+              <h2>Виноград красный б/к</h2>
+              <p>Собственное производство</p>
+              <p>269 р.</p>
+            </div>
+            <div>
+              <img src="images/pears.png" alt="">
+              <h2>Груши Фламинго</h2>
+              <p>Диетический продукт</p>
+              <p>90 р.</p>
+            </div>
+            <div>
+              <img src="images/milk.png" alt="">
+              <h2>Сливки пастеризованные Углече Поле 10%</h2>
+              <p>Колбасный цех</p>
+              <p>196 р.</p>
+            </div>
+            <div>
+              <img src="images/fish.png" alt="">
+              <h2>Анчоусы Mancin в подсолченчном масле филе</h2>
+              <p>Собственное производство</p>
+              <p>340 р.</p>
+            </div>
+          </div>
+          <a class="slide-button prev"></a>
+          <a class="slide-button next"></a>
         </aside>
       </div> <!-- container -->
     </main>
@@ -181,5 +214,9 @@
         </section> <!-- license-and-cont -->
       </div>
     </footer>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/slick.js"></script>
+    <script src="./js/app.js"></script>
   </body>
 </html>
