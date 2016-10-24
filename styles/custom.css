@@ -1,6 +1,34 @@
 @font-face {
-    font-family: Univers Condensed Bold Bold;
-    src: url('../fonts/universe-condenced-bold.ttf');
+    font-family: "Acrom Medium";
+    src: url('../fonts/the-northern-block-acrom-medium.otf');
+}
+@font-face {
+    font-family: "Acrom extra bold";
+    src: url('../fonts/the-northern-block-acrom-extraBold.otf');
+}
+@font-face {
+    font-family: "Acrom bold";
+    src: url('../fonts/the-northern-block-acrom-bold.otf');
+}
+@font-face {
+    font-family: "DIN Next CYR Medium";
+    src: url('../fonts/DINNextCYR-Medium.otf');
+}
+@font-face {
+    font-family: "DIN Next CYR Bold";
+    src: url('../fonts/DINNextCYR-Bold.otf');
+}
+@font-face {
+    font-family: "DIN Next CYR Light";
+    src: url('../fonts/DINNextCYR-Light.otf');
+}
+@font-face {
+    font-family: "DIN Next CYR Regular";
+    src: url('../fonts/DINNextCYR-Regular.otf');
+}
+@font-face {
+    font-family: "DIN Next CYR Ultra Light";
+    src: url('../fonts/DINNextCYR-UltraLight.otf');
 }
 
 /*
@@ -15,7 +43,7 @@
   box-sizing: border-box;
 }
 body {
-  font-family: 'Univers Condensed Bold Bold', sans-serif;
+  font-family: 'Acrom Medium', sans-serif;
   font-size: 16px;
   text-align: center;
   -webkit-user-select: none;
@@ -30,7 +58,7 @@ a {
   text-decoration: none;
   color: rgb(0, 0, 0);
   cursor: pointer;
-  font-family: 'Univers Condensed Bold Bold', sans-serif;
+  font-family: 'Acrom Medium', sans-serif;
 }
 button {
   cursor: pointer;
@@ -41,7 +69,7 @@ a:hover {
 }
 a.btn-edt,
 button.btn-edt {
-  font-family: 'Univers Condensed Bold Bold', sans-serif;
+  font-family: 'Acrom Medium', sans-serif;
 }
 img {
   max-width: 100%;
@@ -63,8 +91,11 @@ header, main, footer {
 }
 input {
   outline: none;
-  font-family: 'Univers Condensed Bold Bold', sans-serif;
+  font-family: 'Acrom Medium', sans-serif;
   padding-left: 1em;
+  font-size: 0.875em;
+  font-weight: 300;
+  line-height: 1.714;
 }
 
 /*
@@ -183,6 +214,14 @@ input {
 .secondary-group li {
   padding: 0.5em 0;
 }
+.secondary-group li:nth-child(2) {
+  font-family: "Acrom Medium";
+  font-size: 1.125em;
+  font-weight: 100;
+}
+.top-info {
+  font-family: "Acrom extra bold";
+}
 .primary-group {
   text-transform: uppercase;
   padding-top: 1em;
@@ -222,6 +261,12 @@ span {
 .callback:active a {
   text-decoration: none;
   color: rgb(255, 255, 255);
+}
+.sign-in {
+  margin-right: 0.2em;
+}
+.sign-up {
+  margin-left: 0.2em;
 }
 .sign-in:hover span,
 .sign-up:hover span {
@@ -322,6 +367,8 @@ li.discount:hover {
   text-transform: uppercase;
   font-weight: 700;
   color: rgb(255, 255, 255);
+  font-size: 0.875em;/* Approximation due to font substitution */
+  line-height: 1.714;/* Approximation due to font substitution */
 }
 .search-section button:active {
   background-color: rgb(43, 129, 37);
@@ -335,12 +382,17 @@ li.discount:hover {
 */
 
 .breadcrumb-section {
-  margin-bottom: 2em;
+  margin-bottom: 4em;
 }
 .breadcrumb-section h1 {
   padding: 0 0 1em 0;
+  font-family: 'Acrom Medium';
+  font-size: 1.875;
+  font-weight: 500;
+  line-height: 0.8;
 }
-.breadcrumb-item {
+.breadcrumb-item a {
+  font-family: 'DIN Next CYR Regular';
   padding: 0.5em 0;
 }
 .breadcrumb-item:first-child {
@@ -359,6 +411,8 @@ li.discount:hover {
 
 .personal-area-nav {
   font-weight: 700;
+  font-family: 'Acrom Medium';
+  font-size: 0.938em;
 }
 .personal-area-info-section {
   margin-bottom: 2em;
@@ -424,7 +478,9 @@ li.discount:hover {
 */
 
 .personal-data {
+  font-family: "DIN Next CYR Regular";
   margin-bottom: 2em;
+  font-weight: 400;
 }
 .personal-data h3 {
   padding: 1em 0;
@@ -438,6 +494,9 @@ li.discount:hover {
 }
 .personal-data dt:first-child {
   padding-top: 0;
+}
+.prsn-lst div {
+  margin-top: 1em;
 }
 
 /*
@@ -455,17 +514,21 @@ li.discount:hover {
 }
 .my-pattern h3,
 .another-pattern h3 {
+  font-family: "DIN Next CYR Regular";
   padding: 1em 0;
   border-bottom: 2px solid rgb(220, 220, 220);
 }
 .my-pattern li,
 .another-pattern li {
+  line-height: 1.5;
+  font-family: "DIN Next CYR Regular";
   padding: 0.5em 0;
 }
 .personal-data li:first-child {
   padding-top: 0;
 }
 .btn-add-pattern {
+  margin-top: 1.5em;
   padding: 0.5em 2em;
   background-color: rgb(97, 166, 37);
   color: rgb(255, 255, 255);
@@ -485,10 +548,17 @@ li.discount:hover {
 */
 
 .ingredients h2 {
-  margin-bottom: 1em;
+  margin-bottom: 0.5em;
+}
+.ingredients p {
+  font-family: "DIN Next CYR Regular";
+}
+.ingredients-item a,
+.ingredients-item  {
+  font-family: "DIN Next CYR Regular";
 }
 .ingredients p:first-of-type {
-  padding-bottom: 1em;
+  padding-bottom: 2em;
   color: rgb(135, 135, 136);
 }
 .ingredients-item {
@@ -516,8 +586,8 @@ li.discount:hover {
   cursor: pointer;
 }
 .social-media {
-  margin-top: 2em;
-  margin-bottom: 1em;
+  margin-top: 4em;
+  margin-bottom: 4em;
 }
 .steps h2 {
   margin-bottom: 0.5em;
@@ -527,6 +597,9 @@ li.discount:hover {
 }
 .steps-item {
   margin-bottom: 1em;
+}
+.steps-item p {
+  font-family: "DIN Next CYR Regular";
 }
 
 /*
@@ -549,6 +622,13 @@ aside h1 {
   margin-top: 1em;
   margin-bottom: 1em;
   text-align: center;
+}
+#slides p:first-of-type {
+  font-family: "DIN Next CYR Regular";
+  color: rgb(135, 135, 136);
+}
+#slides p:last-of-type {
+  font-size: 1.5em;
 }
 #slides img {
   height: 200px;
@@ -576,10 +656,15 @@ footer a:hover {
   color: rgb(97, 166, 37);
 }
 .catalog h2 {
-  padding: 1em 0;
+  padding-top: 2.5em;
+  padding-bottom: 2em;
 }
 .catalog li {
   padding: 0.5em 0;
+}
+.catalog li a {
+  font-family: "DIN Next CYR Regular";
+  font-size: 0.875em;
 }
 .catalog li:last-child {
   padding-bottom: 1em;
@@ -589,6 +674,10 @@ footer a:hover {
 }
 .license-and-contacts {
   padding-top: 1em;
+}
+.license-and-contacts p {
+  font-family: "DIN Next CYR Regular";
+  font-size: 0.875em;
 }
 .license-and-contacts h2 {
   color: rgb(97, 166, 37);
@@ -616,12 +705,36 @@ a.btn-schema span {
 a.btn-schema:hover span {
   color: rgb(0, 0, 0);
 }
+.full-adrs,
+.full-adrs-schem,
+.btn-schema span {
+  font-family: "DIN Next CYR Regular";
+  font-size: 0.875em;
+}
 
 @media screen and (min-width: 319px) {
   .primary-group li:nth-child(6) .icon-c {
     left: 5px;
+    top: 15px;
+  }
+  .primary-group li:nth-child(7) .icon {
+    left: 65px;
   }
 }
+
+@media screen and (min-width: 370px) {
+  .primary-group li:nth-child(6) a {
+    padding-left: 15px;
+  }
+  .primary-group li:nth-child(6) .icon-c {
+    left: 5px;
+    top: 7px;
+  }
+  .primary-group li:nth-child(7) .icon {
+    left: 85px;
+  }
+}
+
 
 @media screen and (min-width: 600px) {
 
@@ -887,7 +1000,15 @@ a.btn-schema:hover span {
       ingredients section styles
     ========================================
   */
-
+  .breadcrumb-item a,
+  .ingredients p,
+  .ingredients-item,
+  .ingredients-item a,
+  .steps-item p,
+  #slides p {
+    font-family: "DIN Next CYR Regular";
+    font-size: 0.875em;
+  }
   .ingredients,
   .ingredients a {
     text-align: left;
