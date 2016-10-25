@@ -821,6 +821,9 @@ a.btn-schema:hover span {
     padding-top: 0.5em;
     text-align: right;
   }
+  .breadcrumb li:nth-of-type(3) {
+    padding-top: 0.5em;
+  }
   .breadcrumb-item:last-child {
     padding-top: 0.5em;
     text-align: left;
