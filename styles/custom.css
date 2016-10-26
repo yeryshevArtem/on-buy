@@ -53,6 +53,7 @@ body {
 .container {
   width: 69.1666667%;
   margin: 0 auto;
+  max-width: 1170px;
 }
 a {
   text-decoration: none;
@@ -215,7 +216,7 @@ input {
 
 .secondary-group {
   padding-bottom: 2em;
-  border-bottom: 2px solid rgb(196, 196, 196);
+  border-bottom: 1px solid rgb(196, 196, 196);
 }
 .secondary-group li {
   padding: 0.5em 0;
@@ -226,7 +227,14 @@ input {
   font-weight: 100;
 }
 .top-info {
-  font-family: "Acrom extra bold";
+  font-family: "Acrom Medium";
+  font-weight: 400;
+  font-size: 1em;
+}
+.top-info span {
+  font-family: "Acrom Medium";
+  font-weight: 700;
+  font-size: 1em;
 }
 .primary-group {
   text-transform: uppercase;
@@ -242,6 +250,14 @@ input {
   background-color: rgb(97, 166, 37);
   color: rgb(255, 255, 255);
   border-radius: 50px;
+}
+.primary-group li:nth-child(1) {
+  background-color: rgb(97, 166, 37);
+  color: rgb(255, 255, 255);
+  border-radius: 50px;
+}
+.primary-group li:nth-child(1) a {
+  color: rgb(255, 255, 255);
 }
 .primary-group li:hover a {
   color: rgb(255, 255, 255);
@@ -282,10 +298,10 @@ span {
 .top-info,
 .sign-in,
 .sign-up {
-  font-weight: 700;
+  font-weight: 400;
 }
 .discount {
-  margin-top: 1em !important;
+  /*margin-top: 1em !important;*/
   background-color: rgb(239, 70, 71);
   border-radius: 50px;
 }
@@ -313,6 +329,9 @@ li.discount:hover {
 }
 .primary-group li:last-child .icon {
   position: absolute;
+}
+.primary-group li:nth-child(1) .icon-c {
+  display: inline-block;
 }
 .primary-group li:hover .icon-c {
   display: inline-block;
@@ -356,6 +375,7 @@ li.discount:hover {
   margin-bottom: 2em;
 }
 .search-section form {
+  /*height: */
   margin-bottom: 1em;
   padding: 1em 1.5em;
   background-color: rgb(97, 166, 37);
@@ -401,7 +421,7 @@ li.discount:hover {
 .breadcrumb-section h1 {
   padding: 0 0 1em 0;
   font-family: 'Acrom Medium';
-  font-size: 1.875;
+  font-size: 1.875em;
   font-weight: 500;
   line-height: 0.8;
 }
@@ -943,7 +963,7 @@ a.btn-schema:hover span {
   .primary-group li:last-child {
     margin-left: 1em;
     flex: 0.2 0 auto;
-    margin-top: 10px !important;
+    /*margin-top: 10px !important;*/
   }
   .primary-group li:nth-child(1) {
     flex: 1 0 33%;
@@ -1304,7 +1324,7 @@ a.btn-schema:hover span {
   .primary-group li:last-child {
     margin-left: 1em;
     flex: 1 0 auto;
-    margin-top: 0 !important;
+    /*margin-top: 0 !important;*/
   }
   .primary-group li:nth-child(1) {
     flex: 1 0 auto;
@@ -1373,6 +1393,34 @@ a.btn-schema:hover span {
     flex: 1 0 15%;
   }
 
+  .search-section form {
+    padding-top: 2.6%;
+    padding-bottom: 2.6%;
+    padding-left: 8.5%;
+    margin-bottom: 10%;
+    margin-top: 7.4%;
+  }
+  .search-section input {
+    flex: 0.65 0 46.2%;
+    padding: 1em;
+    padding-left: 2.6%;
+    padding-right: 0;
+    padding-top: 1.8%;
+    padding-bottom: 1.9%;
+  }
+  .search-section button {
+    padding-bottom: 1.5%;
+    padding-top: 1.5%;
+    flex: 0.18 0 8%;
+    padding-left: 0;
+    padding-right: 0;
+    letter-spacing: 2px;
+    font-size: 13px;
+    border-width: 3px;
+    margin-left: 21px;
+    margin-right: 0;
+  }
+
   /*
     ========================================
       header section styles
@@ -1380,20 +1428,76 @@ a.btn-schema:hover span {
   */
 
   .secondary-group {
-    margin-top: 2em;
+    padding-bottom: 18px;
+    margin-top: 2%;
   }
   .secondary-group li span {
     margin-top: 5px;
   }
-  .secondary-group li:first-child {
-    flex: 1 0 200px;
+  .secondary-group li:nth-child(1) {
+    flex: 1 0 155px;
+    margin-left: -1.6%;
+    position: relative;
+  }
+  .secondary-group li:nth-child(2) {
+    flex: 1 0 250px;
+    margin-top: 0.51%;
+    position: relative;
+  }
+  .secondary-group li:nth-child(3) {
+    flex: 1 1 230px;
+    margin-top: 0.8%;
+    position: relative;
+  }
+  .secondary-group li:nth-child(4) {
+    flex: 1 0 189px;
+    padding-top: 0;
+    padding-bottom: 0;
+    position: relative;
+  }
+  .secondary-group li:nth-child(5) {
+    flex: 1 0 210px;
+    margin-top: 0.9%;
+    position: relative;
+  }
+  .secondary-group li:nth-child(2) .top-info {
+    margin-left: 23%;
+    margin-top: 0.5%;
+    letter-spacing: 0.2px;
+  }
+  .secondary-group li:nth-child(2) .top-info span {
+    margin-left: 4px;
+  }
+  .secondary-group li:nth-child(3) .top-info {
+    font-weight: 700;
+    margin-top: 1.7%;
+    line-height: 140%;
+    padding-left: 10%;
+    margin-right: 0;
+    font-size: 0.875em;
+  }
+  .secondary-group li:nth-child(3) .top-info span {
+    font-weight: 400;
+    margin-left: -24%;
+    font-size: 0.875em;
   }
   .secondary-group .callback  {
     margin-top: -15px;
     margin-bottom: 15px;
+    font-size: 0.875em;
+    height: 40px;
+    margin-top: 0.9%;
   }
-  .secondary-group .callback span {
-    margin-top: 15px;
+  .secondary-group li:nth-child(5) span {
+    margin-top: 5px;
+  }
+  .secondary-group .sgn-in {
+    font-size: 0.875em;
+  }
+  .sign-in,
+  .sign-up {
+    margin-left: 0;
+    margin-right: 0;
   }
   .primary-group li:nth-child(1) .icon-c,
   .primary-group li:nth-child(2) .icon-c,
@@ -1402,6 +1506,144 @@ a.btn-schema:hover span {
   .primary-group li:nth-child(5) .icon-c,
   .primary-group li:nth-child(6) .icon-c {
     top: 15px;
+  }
+  .secondary-group .icon {
+    position: absolute;
+  }
+  .secondary-group li:nth-child(2) .icon {
+    margin-right: 1%;
+    margin-top: 0.6%;
+    left: 22%;
+  }
+  .secondary-group li:nth-child(3) .icon {
+    margin-left: 0;
+    margin-right: 8%;
+    left: 20%;
+    top: 16%;
+  }
+  .callback .icon {
+    left: 5%;
+    top: 15%;
+  }
+  .callback a span {
+    margin-top: 13px;
+    margin-left: 9%;
+  }
+  .secondary-group li:nth-child(5) .icon {
+    left: 21%;
+    top: 15%;
+  }
+  .secondary-group .sgn-in .in-up {
+    font-size: 0.875em;
+    margin-top: 3px;
+  }
+  .secondary-group .sgn-in .sign-in {
+    margin-left: 69.95px;
+  }
+  .secondary-group .sgn-in .in-up .sign-up {
+    margin-left: 10px;
+  }
+  .primary-group li a {
+    letter-spacing: -0.8px;
+  }
+  .primary-group li:nth-child(1) {
+    margin-top: 10px;
+    height: 33px;
+    flex: 1 0 117px;
+  }
+  .primary-group li:nth-child(1) .icon-c {
+    top: 8px;
+    left: 102px;
+  }
+  .primary-group li:nth-child(1) a {
+    position: relative;
+    top: -6px;
+    left: -10px;
+  }
+  .primary-group li:nth-child(2) {
+    margin-top: 10px;
+    height: 33px;
+    flex: 1 0 110px;
+  }
+  .primary-group li:nth-child(2) .icon-c {
+    top: 8px;
+    left: 97px;
+  }
+  .primary-group li:nth-child(2) a {
+    position: relative;
+    top: -6px;
+    left: -10px;
+  }
+  .primary-group li:nth-child(3) {
+    margin-top: 10px;
+    height: 33px;
+    flex: 1 0 230px;
+  }
+  .primary-group li:nth-child(3) .icon-c {
+    top: 8px;
+    left: 217px;
+  }
+  .primary-group li:nth-child(3) a {
+    position: relative;
+    top: -6px;
+    left: -23px;
+  }
+  .primary-group li:nth-child(4) {
+    margin-top: 10px;
+    height: 33px;
+    flex: 1 0 130px;
+  }
+  .primary-group li:nth-child(4) .icon-c {
+    top: 8px;
+    left: 117px;
+  }
+  .primary-group li:nth-child(4) a {
+    position: relative;
+    top: -6px;
+    left: -19px;
+  }
+  .primary-group li:nth-child(5) {
+    margin-top: 10px;
+    height: 33px;
+    flex: 1 0 90px;
+  }
+  .primary-group li:nth-child(5) .icon-c {
+    top: 8px;
+    left: 77px;
+  }
+  .primary-group li:nth-child(5) a {
+    position: relative;
+    top: -6px;
+    left: -17px;
+  }
+  .primary-group li:nth-child(6) {
+    margin-top: 10px;
+    height: 33px;
+    flex: 1 0 305px;
+  }
+  .primary-group li:nth-child(6) .icon-c {
+    top: 8px;
+    left: 289px;
+  }
+  .primary-group li:nth-child(6) a {
+    position: relative;
+    top: -6px;
+    left: -59px;
+  }
+  .primary-group li:nth-child(7) {
+    flex: 1 0 81px;
+    padding-bottom: 0;
+    margin-top: 10px;
+    height: 33px;
+  }
+  .primary-group li:nth-child(7) .icon {
+    left: 21px;
+    top: 5px;
+  }
+  .primary-group li:nth-child(7) a span {
+    margin-top: -6px;
+    font-size: 0.875em;
+    margin-left: 35px;
   }
 
   /*
@@ -1413,24 +1655,42 @@ a.btn-schema:hover span {
   .breadcrumb-section {
     margin-top: 5em;
   }
+  .breadcrumb-section h1 {
+    font-weight: 400;
+    line-height: 0.8;
+    position: relative;
+    top: -4px;
+    left: -1px;
+    letter-spacing: 0.8px;
+  }
   .breadcrumb {
     justify-content: center;
+    margin-top: -7px;
+    margin-left: -20px;
   }
   .breadcrumb-item {
     flex: 0 0 auto;
   }
   .breadcrumb li:nth-child(2),
   .breadcrumb li:nth-child(4) {
-    padding: 0.5em 0.4em;
+    padding: 0.5em;
     flex: 0 0 auto;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   .breadcrumb-item:first-child {
+    padding-left: 22px;
+    padding-right: 2px;
     padding-top: 0.5em;
-    text-align: right;
   }
   .breadcrumb-item:last-child {
     padding-top: 0.5em;
     text-align: left;
+  }
+  .breadcrumb-item:first-child {
+    padding-top: 0.5em;
+    text-align: right;
+    padding-left: 32px;
   }
 
   /*
@@ -1476,18 +1736,59 @@ a.btn-schema:hover span {
   }
   .personal-area-nav {
     margin-top: 5%;
-    flex: 1 0 30%;
+    flex: 1 0 20%;
   }
   .personal-detail-info {
     flex: 1 0 70%;
   }
   .personal-area-nav ul {
+    width: 60%;
     flex-direction: column;
     text-align: left;
   }
   .personal-area-nav li {
-    padding-top: 1em;
+    line-height: 22px;
+    padding-top: 7px;
     padding-bottom: 1em;
+  }
+  .personal-area-nav li:nth-child(1) {
+    margin-top: -15px;
+    padding-left: 31px;
+    padding-bottom: 14px;
+    line-height: 22px;
+    padding-top: 0;
+  }
+  .personal-area-nav li:nth-child(1) .icon-nav {
+    position: relative;
+    left: -29px;
+    top: 27px;
+  }
+  .personal-area-nav li:nth-child(2) {
+    padding-top: 8px;
+    padding-left: 30px;
+    margin-top: -23px;
+  }
+  .personal-area-nav li:nth-child(2) .icon-nav {
+    position: relative;
+    left: -28px;
+    top: 27px;
+  }
+  .personal-area-nav li:nth-child(3) {
+    padding-top: 6px;
+    padding-left: 4px;
+  }
+  .personal-area-nav li:nth-child(3) .icon-nav {
+    position: relative;
+    left: -3px;
+    top: 5px;
+  }
+  .personal-area-nav li:nth-child(4) {
+    margin-right: 5px;
+  }
+  .personal-area-nav li:nth-child(4) .icon-nav {
+    position: relative;
+    left: -1px;
+    top: 5px;
   }
   .personal-edit div:first-child {
     padding-top: 0.5em;
@@ -1501,6 +1802,15 @@ a.btn-schema:hover span {
   .dots {
     border-bottom: 1px dashed rgb(159, 159, 160);
     flex: 1 0 430px;
+  }
+  .personal-edit .form-group:nth-of-type(1) {
+    flex: 1 0 10%;
+  }
+  .personal-edit .form-group:nth-of-type(2) {
+    flex: 1 0 47%;
+  }
+  .personal-edit .form-group:nth-of-type(3) {
+    flex: 1 0 25%;
   }
 }
 
