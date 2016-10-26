@@ -1796,12 +1796,50 @@ a.btn-schema:hover span {
   .personal-data {
     text-align: left;
   }
+  .personal-data h3 {
+    margin-left: 8px;
+    padding-bottom: 14px;
+    padding-top: 14px;
+  }
+  .prsn-lst {
+    padding-top: 0;
+  }
+  .prsn-lst .grid__row--md {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .prsn-lst .grid__row--md:first-of-type {
+    margin-top: 3px;
+  }
+  .prsn-lst .grid__row--md {
+    margin-top: 31px;
+  }
+  .prsn-lst dt {
+    margin-left: 8px;
+  }
   .edit {
     text-align: right;
+  }
+  .personal-data .edit .icon-nav {
+    position: relative;
+    top: 2px;
+    left: -29px;
+  }
+  .personal-data .edit .btn-edt {
+    position: relative;
+    margin-top: 14px;
+    font-size: 1em;
+    left: -25px;
+  }
+  .personal-data .edit .btn-edt span {
+    font-size: 0.875em;
   }
   .dots {
     border-bottom: 1px dashed rgb(159, 159, 160);
     flex: 1 0 430px;
+  }
+  .personal-edit {
+    border-width: 1px;
   }
   .personal-edit .form-group:nth-of-type(1) {
     flex: 1 0 17%;
@@ -1842,6 +1880,7 @@ a.btn-schema:hover span {
     position: relative;
     top: -10px;
   }
+
 }
 
 @media screen and (min-width: 2000px) {
