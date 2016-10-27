@@ -1381,7 +1381,7 @@ a.btn-schema:hover span {
   }
 }
 
-@media screen and (min-width: 1800px) {
+@media screen and (min-width: 1600px) {
 
   /*
   ========================================
@@ -1531,7 +1531,7 @@ a.btn-schema:hover span {
   }
   .secondary-group li:nth-child(5) .icon {
     left: 21%;
-    top: 15%;
+    top: 11px;
   }
   .secondary-group .sgn-in .in-up {
     font-size: 0.875em;
@@ -1637,11 +1637,12 @@ a.btn-schema:hover span {
     height: 33px;
   }
   .primary-group li:nth-child(7) .icon {
-    left: 21px;
+    left: 20px;
     top: 5px;
   }
   .primary-group li:nth-child(7) a span {
     margin-top: -6px;
+    letter-spacing: 2px;
     font-size: 0.875em;
     margin-left: 35px;
   }
@@ -1673,25 +1674,29 @@ a.btn-schema:hover span {
   }
   .breadcrumb li:nth-child(2),
   .breadcrumb li:nth-child(4) {
-    padding: 0.5em;
-    flex: 0 0 auto;
-    padding-left: 12px;
-    padding-right: 12px;
+    margin-left: 12px;
+    padding-right: 0;
+    margin-right: 0;
+    width: 1px;
+    flex: 0 0 0.1px;
   }
   .breadcrumb-item:first-child {
-    padding-left: 22px;
-    padding-right: 2px;
-    padding-top: 0.5em;
-  }
-  .breadcrumb-item:last-child {
-    padding-top: 0.5em;
-    text-align: left;
-  }
-  .breadcrumb-item:first-child {
+    flex: 1 0 auto;
     padding-top: 0.5em;
     text-align: right;
     padding-left: 32px;
+    margin-left: -20px;
   }
+  .breadcrumb-item:last-child {
+    margin-left: 18px;
+    padding-top: 0.5em;
+    flex: 1 0 auto;
+  }
+  /*.breadcrumb-item:first-child {
+    padding-top: 0.5em;
+    text-align: right;
+    padding-left: 32px;
+  }*/
 
   /*
     ========================================
@@ -1760,8 +1765,8 @@ a.btn-schema:hover span {
   }
   .personal-area-nav li:nth-child(1) .icon-nav {
     position: relative;
-    left: -29px;
-    top: 27px;
+    left: -28px;
+    top: 28px;
   }
   .personal-area-nav li:nth-child(2) {
     padding-top: 8px;
@@ -1770,8 +1775,8 @@ a.btn-schema:hover span {
   }
   .personal-area-nav li:nth-child(2) .icon-nav {
     position: relative;
-    left: -28px;
-    top: 27px;
+    left: -26px;
+    top: 28px;
   }
   .personal-area-nav li:nth-child(3) {
     padding-top: 6px;
@@ -1779,8 +1784,8 @@ a.btn-schema:hover span {
   }
   .personal-area-nav li:nth-child(3) .icon-nav {
     position: relative;
-    left: -3px;
-    top: 5px;
+    left: -1px;
+    top: 7px;
   }
   .personal-area-nav li:nth-child(4) {
     margin-right: 5px;
@@ -2116,9 +2121,13 @@ a.btn-schema:hover span {
     margin-top: -9px;
     margin-left: 31px;
   }
+  .schm .icon {
+    position: relative;
+    top: 3px;
+  }
 }
 
-@media screen and (min-width: 2000px) {
+/*@media screen and (min-width: 2000px) {*/
 
   /*
     ========================================
@@ -2126,15 +2135,15 @@ a.btn-schema:hover span {
     ========================================
   */
 
-  .prev{
+  /*.prev{
     left: -40px;
   }
   .next {
     left: 1450px;
   }
-}
+}*/
 
-@media screen and (min-width: 2400px) {
+/*@media screen and (min-width: 2400px) {*/
 
   /*
     ========================================
@@ -2142,12 +2151,12 @@ a.btn-schema:hover span {
     ========================================
   */
 
-  .next {
+  /*.next {
     left: 1725px;
   }
 }
 
-@media screen and (min-width: 2700px) {
+@media screen and (min-width: 2700px) {*/
 
   /*
     ========================================
@@ -2155,12 +2164,12 @@ a.btn-schema:hover span {
     ========================================
   */
 
-  .next {
+  /*.next {
     left: 1950px;
   }
 }
 
-@media screen and (min-width: 3700px) {
+@media screen and (min-width: 3700px) {*/
 
   /*
     ========================================
@@ -2168,7 +2177,7 @@ a.btn-schema:hover span {
     ========================================
   */
 
-  .prev{
+  /*.prev{
     left: -100px;
   }
   .next {
@@ -2176,7 +2185,7 @@ a.btn-schema:hover span {
   }
 }
 
-@media screen and (min-width: 5500px) {
+@media screen and (min-width: 5500px) {*/
 
   /*
     ========================================
@@ -2184,14 +2193,14 @@ a.btn-schema:hover span {
     ========================================
   */
 
-  .prev{
+  /*.prev{
     left: 200px;
   }
   .next {
     left: 3600px;
   }
 }
-@media screen and (min-width: 7000px) {
+@media screen and (min-width: 7000px) {*/
 
   /*
     ========================================
@@ -2199,10 +2208,10 @@ a.btn-schema:hover span {
     ========================================
   */
 
-  .prev{
+  /*.prev{
     left: -300px;
   }
   .next {
     left: 5500px;
   }
-}
+}*/
