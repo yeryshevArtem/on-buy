@@ -238,7 +238,7 @@ input {
 }
 .primary-group {
   text-transform: uppercase;
-  padding-top: 1em;
+  padding-top: 16px;
 }
 .primary-group li {
   padding: 0.5em 0;
@@ -1383,6 +1383,10 @@ a.btn-schema:hover span {
 
 @media screen and (min-width: 1600px) {
 
+  main {
+    margin-bottom: 64px;
+  }
+
   /*
   ========================================
     grid styles
@@ -1392,26 +1396,31 @@ a.btn-schema:hover span {
   .grid__item {
     flex: 1 0 15%;
   }
-
+  .search-section {
+    margin-bottom: 32px;
+  }
   .search-section form {
-    padding-top: 2.6%;
-    padding-bottom: 2.6%;
-    padding-left: 8.5%;
-    margin-bottom: 10%;
-    margin-top: 7.4%;
+    padding-top: 30.406px;
+    padding-bottom: 30.406px;
+    padding-left: 99.438px;
+    margin-bottom: 117px;
+    padding-right: 24px;
+    margin-top: 86.578px;
   }
   .search-section input {
-    flex: 0.65 0 46.2%;
-    padding: 1em;
-    padding-left: 2.6%;
+    flex: 0.65 0 483.52px;
+    padding: 16px;
+    padding-left: 27.203px;
     padding-right: 0;
-    padding-top: 1.8%;
-    padding-bottom: 1.9%;
+    padding-top: 18.828px;
+    padding-bottom: 19.875px;
+    margin-top: 14px;
+    margin-bottom: 14px;
   }
   .search-section button {
-    padding-bottom: 1.5%;
-    padding-top: 1.5%;
-    flex: 0.18 0 8%;
+    padding-bottom: 15.688px;
+    padding-top: 15.688px;
+    flex: 0.18 0 83.72px;
     padding-left: 0;
     padding-right: 0;
     letter-spacing: 2px;
@@ -1419,6 +1428,8 @@ a.btn-schema:hover span {
     border-width: 3px;
     margin-left: 21px;
     margin-right: 0;
+    margin-top: 13px;
+    margin-left: 21px;
   }
 
   /*
@@ -1429,40 +1440,47 @@ a.btn-schema:hover span {
 
   .secondary-group {
     padding-bottom: 18px;
-    margin-top: 2%;
+    margin-top: 23.391px;
   }
   .secondary-group li span {
     margin-top: 5px;
   }
   .secondary-group li:nth-child(1) {
     flex: 1 0 155px;
-    margin-left: -1.6%;
+    margin-left: -18.719px;
     position: relative;
+    padding: 8px 0;
   }
   .secondary-group li:nth-child(2) {
     flex: 1 0 250px;
-    margin-top: 0.51%;
+    margin-top: 5.953px;
     position: relative;
+    padding: 9px 0;
+    margin-left: 18px;
   }
   .secondary-group li:nth-child(3) {
     flex: 1 1 230px;
-    margin-top: 0.8%;
+    margin-top: 9.359px;
     position: relative;
+    padding: 8px 0;
   }
   .secondary-group li:nth-child(4) {
     flex: 1 0 189px;
     padding-top: 0;
     padding-bottom: 0;
     position: relative;
+    margin-top: 10.516px;
+    margin-bottom: 15px;
   }
   .secondary-group li:nth-child(5) {
     flex: 1 0 210px;
-    margin-top: 0.9%;
+    margin-top: 10.516px;
     position: relative;
+    padding: 7px 0;
   }
   .secondary-group li:nth-child(2) .top-info {
-    margin-left: 23%;
-    margin-top: 0.5%;
+    margin-left: 63.781px;
+    margin-top: 1.375px;
     letter-spacing: 0.2px;
   }
   .secondary-group li:nth-child(2) .top-info span {
@@ -1470,15 +1488,15 @@ a.btn-schema:hover span {
   }
   .secondary-group li:nth-child(3) .top-info {
     font-weight: 700;
-    margin-top: 1.7%;
+    margin-top: 4.359px;
     line-height: 140%;
-    padding-left: 10%;
+    padding-left: 25.734px;
     margin-right: 0;
     font-size: 0.875em;
   }
   .secondary-group li:nth-child(3) .top-info span {
     font-weight: 400;
-    margin-left: -24%;
+    margin-left: -28.238px;
     font-size: 0.875em;
   }
   .secondary-group .callback  {
@@ -1511,26 +1529,27 @@ a.btn-schema:hover span {
     position: absolute;
   }
   .secondary-group li:nth-child(2) .icon {
-    margin-right: 1%;
-    margin-top: 0.6%;
-    left: 22%;
+    margin-right: 2.766px;
+    margin-top: 1.656px;
+    left: 61.016px;
+    padding-top: 5px;
   }
   .secondary-group li:nth-child(3) .icon {
     margin-left: 0;
-    margin-right: 8%;
-    left: 20%;
-    top: 16%;
+    margin-right: 20.578px;
+    left: 51.469px;
+    top: 10.078px;
   }
   .callback .icon {
-    left: 5%;
-    top: 15%;
+    left: 10.609px;
+    top: 5.391px;
   }
   .callback a span {
     margin-top: 13px;
-    margin-left: 9%;
+    margin-left: 19.109px;
   }
   .secondary-group li:nth-child(5) .icon {
-    left: 21%;
+    left: 49.828px;
     top: 11px;
   }
   .secondary-group .sgn-in .in-up {
@@ -1550,6 +1569,7 @@ a.btn-schema:hover span {
     margin-top: 10px;
     height: 33px;
     flex: 1 0 117px;
+    padding-top: 16px;
   }
   .primary-group li:nth-child(1) .icon-c {
     top: 8px;
@@ -1564,6 +1584,7 @@ a.btn-schema:hover span {
     margin-top: 10px;
     height: 33px;
     flex: 1 0 110px;
+    padding-top: 16px;
   }
   .primary-group li:nth-child(2) .icon-c {
     top: 8px;
@@ -1578,6 +1599,8 @@ a.btn-schema:hover span {
     margin-top: 10px;
     height: 33px;
     flex: 1 0 230px;
+    padding-top: 16px;
+    padding-left: 10px;
   }
   .primary-group li:nth-child(3) .icon-c {
     top: 8px;
@@ -1592,6 +1615,7 @@ a.btn-schema:hover span {
     margin-top: 10px;
     height: 33px;
     flex: 1 0 130px;
+    padding-top: 16px;
   }
   .primary-group li:nth-child(4) .icon-c {
     top: 8px;
@@ -1635,6 +1659,8 @@ a.btn-schema:hover span {
     padding-bottom: 0;
     margin-top: 10px;
     height: 33px;
+    margin-left: 16px;
+    padding-top: 16px;
   }
   .primary-group li:nth-child(7) .icon {
     left: 20px;
@@ -1654,7 +1680,8 @@ a.btn-schema:hover span {
   */
 
   .breadcrumb-section {
-    margin-top: 5em;
+    margin-top: 80px;
+    margin-bottom: 64px;
   }
   .breadcrumb-section h1 {
     font-weight: 400;
@@ -1680,16 +1707,18 @@ a.btn-schema:hover span {
     margin-right: 0;
     width: 1px;
     flex: 0 0 0.1px;
+    padding-top: 8px;
+    padding-left: 6.400px;
   }
   .breadcrumb-item {
     width: 60px;
     flex: 0 0 auto;
-    padding-top: 0.5em;
+    padding-top: 8px;
     text-align: right;
   }
   .breadcrumb .breadcrumb-item:first-child {
     flex: 1 0 auto;
-    padding-top: 0.5em;
+    padding-top: 8px;
     text-align: right;
     padding-left: 32px;
     margin-left: -30px;
@@ -1705,6 +1734,9 @@ a.btn-schema:hover span {
     margin-left: 18px;
     padding-top: 0.5em;
     flex: 1 0 auto;
+  }
+  .breadcrumb-item a {
+    padding: 7px 0;
   }
 
   /*
@@ -1889,20 +1921,23 @@ a.btn-schema:hover span {
     ========================================
   */
 
-
+  .personal-area-info-section {
+    margin-bottom: 32px;
+  }
   .btn-edt {
     padding-left: 0;
     padding-right: 0;
   }
   .personal-area-nav {
-    margin-top: 5%;
-    flex: 1 0 20%;
+    margin-top: 58.500px;
+    padding-bottom: 15.008px;
+    flex: 1 0 234.01px;
   }
   .personal-detail-info {
     flex: 1 0 70%;
   }
   .personal-area-nav ul {
-    width: 60%;
+    width: 175.5px;
     flex-direction: column;
     text-align: left;
   }
