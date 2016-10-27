@@ -1664,7 +1664,8 @@ a.btn-schema:hover span {
     left: -1px;
     letter-spacing: 0.8px;
   }
-  .breadcrumb {
+  .breadcrumb,
+  .recept {
     justify-content: center;
     margin-top: -7px;
     margin-left: -20px;
@@ -1674,29 +1675,37 @@ a.btn-schema:hover span {
   }
   .breadcrumb li:nth-child(2),
   .breadcrumb li:nth-child(4) {
-    margin-left: 12px;
+    margin-left: 6px;
     padding-right: 0;
     margin-right: 0;
     width: 1px;
     flex: 0 0 0.1px;
   }
-  .breadcrumb-item:first-child {
+  .breadcrumb-item {
+    width: 60px;
+    flex: 0 0 auto;
+    padding-top: 0.5em;
+    text-align: right;
+  }
+  .breadcrumb .breadcrumb-item:first-child {
     flex: 1 0 auto;
     padding-top: 0.5em;
     text-align: right;
     padding-left: 32px;
-    margin-left: -20px;
+    margin-left: -30px;
+}
+  .recept .breadcrumb-item:first-child {
+    flex: 1 0 auto;
+    padding-top: 0.5em;
+    text-align: right;
+    padding-left: 32px;
+    margin-left: 2%;
   }
   .breadcrumb-item:last-child {
     margin-left: 18px;
     padding-top: 0.5em;
     flex: 1 0 auto;
   }
-  /*.breadcrumb-item:first-child {
-    padding-top: 0.5em;
-    text-align: right;
-    padding-left: 32px;
-  }*/
 
   /*
     ========================================
@@ -1704,17 +1713,159 @@ a.btn-schema:hover span {
     ========================================
   */
 
+  .recept-detail-info {
+    margin-top: 125px;
+  }
   .ingredients,
   .ingredients a {
     text-align: left;
   }
   .ingredients {
-    flex: 0.5 0 200px;
+    flex: 0.5 0 100px;
+  }
+  .steps h2 {
+    letter-spacing: 1px;
   }
   .steps img {
-    margin-left: 0;
+    margin-top: 61px;
+    margin-left: 3px;
+    width: 670px;
+  }
+  .ingredients ul {
+    padding-left: 4px;
+    padding-top: 6px;
+  }
+  .ingredients ul .ingredients-item a {
+    font-size: 1em;
+  }
+  .ingredients ul .ingredients-item:nth-child(2) {
+    padding-bottom: 6px;
+  }
+  .ingredients ul .ingredients-item:nth-child(3),
+  .ingredients ul .ingredients-item:nth-child(4),
+  .ingredients ul .ingredients-item:nth-child(5) {
+    padding-bottom: 10px;
+  }
+  .ingredients ul .ingredients-item:nth-child(7),
+  .ingredients ul .ingredients-item:nth-child(8) {
+    padding-bottom: 8px;
+  }
+  .ingredients ul .ingredients-item:nth-child(8) {
+    padding-bottom: 4px;
+  }
+  .steps-row {
+    margin-left: 2px;
+    max-width: 755px;
+    margin-top: 40px;
+  }
+  .steps-row .steps-item:nth-child(2) {
+    padding-top: 11px;
+  }
+  .steps-row .steps-item:nth-child(3) {
+    padding-top: 14px;
+  }
+  .steps-row .steps-item:nth-child(4) {
+    padding-top: 14px;
+  }
+  .steps .social-media img {
+    max-width: 311px;
+    position: relative;
+    top: 3px;
+  }
+  aside {
+    margin-bottom: -45px;
+  }
+  aside h1 {
+    font-size: 1.875em;
+    margin-top: 32px;
+    margin-left: 5px;
+    letter-spacing: 1px;
+  }
+  aside .prev {
+    left: -50px;
+    top: 204px;
+  }
+  aside .next {
+    left: 1200px;
+    top: 204px;
+  }
+  #slides .slick-slide:nth-child(1) h2,
+  #slides .slick-slide:nth-child(5) h2 {
+    margin-left: -60px;
+    margin-top: 48px;
+    font-size: 1em;
+  }
+  #slides .slick-slide:nth-child(1) p:first-of-type,
+  #slides .slick-slide:nth-child(5) p:first-of-type {
+    margin-top: -38px;
+    margin-left: -70px;
+  }
+  #slides .slick-slide:nth-child(1) p:nth-of-type(2),
+  #slides .slick-slide:nth-child(5) p:nth-of-type(2) {
+    margin-left: -169px;
+    letter-spacing: 1px;
+    font-family: 'Acrom Medium', sans-serif;
   }
 
+  #slides .slick-slide:nth-child(2) h2,
+    #slides .slick-slide:nth-child(6) h2 {
+    margin-left: -92px;
+    margin-top: 48px;
+    font-size: 1em;
+  }
+  #slides .slick-slide:nth-child(2) p:first-of-type,
+    #slides .slick-slide:nth-child(6) p:first-of-type {
+    margin-top: -38px;
+    margin-left: -100px;
+  }
+  #slides .slick-slide:nth-child(2) p:nth-of-type(2),
+    #slides .slick-slide:nth-child(6) p:nth-of-type(2) {
+    margin-left: -169px;
+    letter-spacing: 1px;
+    font-family: 'Acrom Medium', sans-serif;
+  }
+
+  #slides .slick-slide:nth-child(3) h2,
+    #slides .slick-slide:nth-child(7) h2 {
+    margin-top: 48px;
+    margin-left: 33px;
+    font-size: 1em;
+    text-align: left;
+    line-height: 23px;
+  }
+  #slides .slick-slide:nth-child(3) p:first-of-type,
+  #slides .slick-slide:nth-child(7) p:first-of-type {
+    margin-top: -38px;
+    margin-left: -100px;
+    margin-right: 29px;
+  }
+  #slides .slick-slide:nth-child(3) p:nth-of-type(2),
+  #slides .slick-slide:nth-child(7) p:nth-of-type(2) {
+    margin-left: -149px;
+    letter-spacing: 1px;
+    font-family: 'Acrom Medium', sans-serif;
+  }
+
+  #slides .slick-slide:nth-child(4) h2,
+  #slides .slick-slide:nth-child(8) h2  {
+    margin-top: 48px;
+    margin-left: 40px;
+    font-size: 1em;
+    text-align: left;
+    line-height: 23px;
+  }
+  #slides .slick-slide:nth-child(4) p:first-of-type,
+  #slides .slick-slide:nth-child(8) p:first-of-type {
+    margin-top: -38px;
+    margin-left: -10px;
+    margin-right: 29px;
+  }
+  #slides .slick-slide:nth-child(4) p:nth-of-type(2),
+  #slides .slick-slide:nth-child(8) p:nth-of-type(2) {
+    margin-left: -127px;
+    letter-spacing: 1px;
+    font-family: 'Acrom Medium', sans-serif;
+  }
   /*
     ========================================
       recept-production section styles
@@ -1726,6 +1877,10 @@ a.btn-schema:hover span {
   }
   .next {
     left: 1300px;
+  }
+  .steps img {
+    max-width: 670px;
+    max-height: 377px;
   }
 
   /*
