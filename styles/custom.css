@@ -1814,11 +1814,42 @@ a.btn-schema:hover span {
   .prsn-lst .grid__row--md {
     margin-top: 31px;
   }
+  .prsn-lst {
+    font-size: 0.875em;
+    width: 820px;
+  }
+  .prsn-lst div:nth-child(1) {
+    padding-bottom: 5px;
+  }
+  .prsn-lst div:nth-child(1) dd,
+  .prsn-lst div:nth-child(2) dd,
+  .prsn-lst div:nth-child(3) dd,
+  .prsn-lst div:nth-child(4) dd,
+  .prsn-lst div:nth-child(5) dd {
+      flex: 0 0 310px;
+   }
+   .prsn-lst div:nth-child(1) dt
+   .prsn-lst div:nth-child(2) dt,
+   .prsn-lst div:nth-child(3) dt,
+   .prsn-lst div:nth-child(4) dt,
+   .prsn-lst div:nth-child(5) dt {
+       flex: 0 1 auto;
+    }
+  .prsn-lst div:nth-child(1) dd,
+  .prsn-lst div:nth-child(2) dd,
+  .prsn-lst div:nth-child(3) dd,
+  .prsn-lst div:nth-child(4) dd,
+  .prsn-lst div:nth-child(5) dd {
+    text-align: left !important;
+  }
   .prsn-lst dt {
     margin-left: 8px;
   }
   .edit {
     text-align: right;
+  }
+  .prsn-lst div:nth-child(5) {
+    padding-top: 3px;
   }
   .personal-data .edit .icon-nav {
     position: relative;
@@ -1836,7 +1867,7 @@ a.btn-schema:hover span {
   }
   .dots {
     border-bottom: 1px dashed rgb(159, 159, 160);
-    flex: 1 0 430px;
+    flex: 1 0 auto;
   }
   .personal-edit {
     border-width: 1px;
@@ -1880,7 +1911,211 @@ a.btn-schema:hover span {
     position: relative;
     top: -10px;
   }
-
+  .personal-data-patterns {
+    padding-top: 43px;
+    padding-left: 5px;
+  }
+  .personal-data-patterns h2 {
+    padding-bottom: 15px;
+    letter-spacing: 0.7px;
+  }
+  .my-pattern {
+    width: 367px;
+    flex: 1 0 auto;
+  }
+  .my-pattern h3 {
+    padding-left: 4px;
+    border-width: 1px;
+  }
+  .my-pattern ul {
+    font-size: 0.875em;
+    padding-left: 7px;
+    width: 70%;
+  }
+  .another-pattern {
+    width: 367px;
+    flex: 1 0 auto;
+    margin-left: 130px;
+  }
+  .another-pattern h3 {
+    padding-left: 4px;
+    border-width: 1px;
+  }
+  .another-pattern ul {
+    font-size: 0.875em;
+    padding-left: 7px;
+    width: 70%;
+  }
+  .btn-add-pattern {
+    margin-top: 97px;
+  }
+  .my-pattern .usr,
+  .another-pattern .usr {
+    padding-top: 11px;
+  }
+  .my-pattern .mrkr,
+  .another-pattern .mrkr {
+    margin-top: 0;
+  }
+  .my-pattern .mrkr .icon-nav,
+  .another-pattern .mrkr .icon-nav {
+    position: relative;
+    top: 13px;
+  }
+  .my-pattern .mrkr span,
+  .another-pattern .mrkr span {
+    padding-left: 28px;
+    padding-bottom: 2px;
+    margin-top: -12px;
+    line-height: 24px;
+  }
+  .my-pattern .nmbr .icon-nav,
+  .another-pattern .nmbr .icon-nav {
+    position: relative;
+    top: 10px;
+  }
+  .my-pattern .nmbr span,
+  .another-pattern .nmbr span {
+    padding-top: 9px;
+  }
+  .my-pattern .ltr .icon-nav,
+  .another-pattern .ltr .icon-nav {
+    position: relative;
+    top: 16px;
+  }
+  .my-pattern .ltr span,
+  .another-pattern .ltr span {
+    padding-top: 12px;
+  }
+  .my-pattern .edit,
+  .another-pattern .edit {
+    padding-top: 38px;
+    padding-left: 2px;
+  }
+  .personal-data-patterns .btn-add-pattern {
+    margin-top: 25px;
+    margin-left: 0;
+    position: relative;
+    left: -8px;
+    font-size: 0.875em;
+    padding-left: 21px;
+    padding-top: 10px;
+  }
+  .another-pattern .usr .icon-nav {
+    left: -2px;
+    position: relative;
+    top: 2px;
+  }
+  .my-pattern .usr .icon-nav {
+    position: relative;
+    top: 2px;
+  }
+  .another-pattern .mrkr .icon-nav {
+    position: relative;
+    top: 13px;
+    left: -2px;
+  }
+  .another-pattern .nmbr .icon-nav {
+    top: 11px;
+    left: -5px;
+  }
+  .my-pattern .nmbr .icon-nav {
+    top: 11px;
+    left: -1px;
+  }
+  .another-pattern .ltr .icon-nav {
+    top: 17px;
+    left: -4px;
+  }
+  .my-pattern .ltr .icon-nav {
+    top: 17px;
+  }
+  .another-pattern .edit .icon-nav {
+    position: relative;
+    left: -4px;
+  }
+  footer {
+    margin-top: 112px;
+  }
+  .catalog {
+    border-width: 1px;
+    padding-bottom: 0;
+  }
+  .columns {
+    padding-bottom: 38px;
+    padding-top: 4px;
+  }
+  .columns li {
+    padding-top: 1px
+  }
+  .catalog h2 {
+    padding-top: 47px;
+    padding-bottom: 24px;
+  }
+  .columns li:nth-child(-n+17) {
+    margin-left: 5px
+  }
+  .columns li:nth-child(n+13) {
+    margin-left: 7px;
+    margin-top: -1px;
+  }
+  .license-and-contacts {
+    margin-top: 14px;
+  }
+  .license-and-contacts .license {
+    width: 300px;
+    flex: 1 0 auto;
+  }
+  .license-and-contacts .contacts {
+    width: 400px;
+    flex: 1 0 auto;
+  }
+  .license-and-contacts .license h2 {
+    padding-bottom: 28px;
+  }
+  .license-and-contacts .license p {
+    line-height: 26px;
+    margin-left: 20px;
+  }
+  .contacts {
+    margin-left: 130px;
+  }
+  .contacts .grid__row--md {
+    margin-top: 13px;
+    margin-left: 7px;
+  }
+  .contacts .grid__row--md .phone {
+    margin-left: 1em;
+  }
+  .contacts .grid__row--md .phone h3 {
+    padding-bottom: 13px;
+    letter-spacing: 2px;
+  }
+  .contacts .grid__row--md .mail {
+    margin-left: 93px;
+  }
+  .contacts .grid__row--md .mail h3 {
+    padding-bottom: 10px;
+    letter-spacing: 2px;
+  }
+  .full-adrs {
+    margin-top: 50px;
+    margin-left: 19px;
+  }
+  .full-adrs-schem {
+    margin-top: 12px;
+    margin-left: 7px;
+  }
+  .full-adrs-schem .grid__item:first-child {
+    margin-top: -2px;
+    margin-left: 12px;
+    flex: 1 0 5%;
+  }
+  .full-adrs-schem .grid__item:last-child {
+    flex: 1 0 50%;
+    margin-top: -9px;
+    margin-left: 31px;
+  }
 }
 
 @media screen and (min-width: 2000px) {
